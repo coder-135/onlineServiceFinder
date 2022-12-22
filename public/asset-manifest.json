@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/static/css/main.d7a52c39.css",
+    "main.js": "/static/js/main.8c226ddf.js",
+    "static/media/IRAN.woff": "/static/media/IRAN.1fbdc13689acf2ee3d9e.woff",
+    "index.html": "/index.html",
+    "main.d7a52c39.css.map": "/static/css/main.d7a52c39.css.map",
+    "main.8c226ddf.js.map": "/static/js/main.8c226ddf.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d7a52c39.css",
+    "static/js/main.8c226ddf.js"
+  ]
+}

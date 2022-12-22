@@ -1,0 +1,5641 @@
+{
+	"info": {
+		"_postman_id": "a49db74b-f272-4aca-bf04-ce8c6445352a",
+		"name": "Hive",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "11075213"
+	},
+	"item": [
+		{
+			"name": "userManagerService",
+			"item": [
+				{
+					"name": "vip",
+					"item": [
+						{
+							"name": "addVIP",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"userId\": \"7f57183b-7623-4c80-82c6-7c263fc9ecc6\",\r\n    \"agentId\": \"f20150c3-6243-47fd-a9ce-c554f383305b\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{local}}/api/user/VIP",
+									"host": [
+										"{{local}}"
+									],
+									"path": [
+										"api",
+										"user",
+										"VIP"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getVIP",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{dev}}/api/user/VIP?userId=3b5d4326-a6ae-4661-8498-2b22f642465f",
+									"host": [
+										"{{dev}}"
+									],
+									"path": [
+										"api",
+										"user",
+										"VIP"
+									],
+									"query": [
+										{
+											"key": "userId",
+											"value": "3b5d4326-a6ae-4661-8498-2b22f642465f"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "success",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{dev}}/api/user/VIP?userId=3b5d4326-a6ae-4661-8498-2b22f642465f",
+											"host": [
+												"{{dev}}"
+											],
+											"path": [
+												"api",
+												"user",
+												"VIP"
+											],
+											"query": [
+												{
+													"key": "userId",
+													"value": "3b5d4326-a6ae-4661-8498-2b22f642465f"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Server",
+											"value": "nginx/1.14.2"
+										},
+										{
+											"key": "Date",
+											"value": "Mon, 16 May 2022 16:49:57 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "1204"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"4b4-TKuIb8H2CEy+synaTBrnAI+klmo\""
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"status\": \"success\",\n    \"data\": {\n        \"message\": \"لیست کارگذاران VIP \",\n        \"result\": [\n            {\n                \"agentId\": \"6eddba7f-0b9e-4106-a0d9-40be545cd7b1\",\n                \"fullName\": \"امیر حسین فرهادی\",\n                \"avatarUrl\": \"https://hive1400.ir/uploads/avatars/4ed4e652-56c7-42b0-a57f-3d8a4eaf7e5f.jpg\",\n                \"category\": [\n                    {\n                        \"categoryName\": \"نظافت منزل\",\n                        \"categoryId\": \"e2114312-debb-49af-b74c-e8b70e0df27e\"\n                    },\n                    {\n                        \"categoryName\": \"برق ماشین\",\n                        \"categoryId\": \"71c97970-ffbd-4fb4-b1d1-a4a9774d8008\"\n                    }\n                ]\n            },\n            {\n                \"agentId\": \"62c00501-8b0d-472e-a3e4-2d42a5fe0cee\",\n                \"fullName\": \"سیدرضا حسینی \",\n                \"avatarUrl\": \"https://hive1400.ir/uploads/avatars/03e17819-3570-48a5-8d13-1c19a49597d0.jpg\",\n                \"category\": [\n                    {\n                        \"categoryName\": \"نظافت منزل\",\n                        \"categoryId\": \"e2114312-debb-49af-b74c-e8b70e0df27e\"\n                    },\n                    {\n                        \"categoryName\": \"برق ماشین\",\n                        \"categoryId\": \"71c97970-ffbd-4fb4-b1d1-a4a9774d8008\"\n                    }\n                ]\n            },\n            {\n                \"agentId\": \"f20150c3-6243-47fd-a9ce-c554f383305b\",\n                \"fullName\": \"محسن ایرد \",\n                \"avatarUrl\": \"https://hive1400.ir/uploads/avatars/880bcef8-2037-4890-8dbe-730d903e6f00.jpg\",\n                \"category\": [\n                    {\n                        \"categoryName\": \"نظافت منزل\",\n                        \"categoryId\": \"e2114312-debb-49af-b74c-e8b70e0df27e\"\n                    },\n                    {\n                        \"categoryName\": \"برق ماشین\",\n                        \"categoryId\": \"71c97970-ffbd-4fb4-b1d1-a4a9774d8008\"\n                    }\n                ]\n            }\n        ]\n    }\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "update",
+					"item": [
+						{
+							"name": "updateOtp",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"phoneNumber\":\"09353133959\",\r\n    \"otp\":8149\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{local}}/api/user/updateOtp",
+									"host": [
+										"{{local}}"
+									],
+									"path": [
+										"api",
+										"user",
+										"updateOtp"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "updateUser",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"userId\":\"7f57183b-7623-4c80-82c6-7c263fc9ecc6\",\r\n    \"fatherName\": \"سیدمحمد\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{local}}/api/user/update",
+									"host": [
+										"{{local}}"
+									],
+									"path": [
+										"api",
+										"user",
+										"update"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "otp",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"phoneNumber\":\"09353133959\",\r\n    \"otp\":4974\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local}}/api/user/otp",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"api",
+								"user",
+								"otp"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "resetPassword",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nationalId\":\"0658818007\",\r\n    \"newPassword\": \"54321\",\r\n    \"confirmNewPassword\": \"54321\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{dev}}/api/user/resetPassword",
+							"host": [
+								"{{dev}}"
+							],
+							"path": [
+								"api",
+								"user",
+								"resetPassword"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "resetPasswordOtp",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"phoneNumber\": \"093531339592\",\r\n    \"nationalId\": \"0658818007\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{dev}}/api/user/resetPasswordOtp",
+							"host": [
+								"{{dev}}"
+							],
+							"path": [
+								"api",
+								"user",
+								"resetPasswordOtp"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "signup",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"phoneNumber\":\"09353133959\",\r\n    \"fullName\": \"سیدرضا \",\r\n    \"nationalId\": \"0102316716\",\r\n    \"birthDate\": \"1376/12/20\",\r\n    \"fatherName\": \"سیدمحمد\",\r\n    \"gender\": \"male\",\r\n    \"password\": \"1234\",\r\n    \"confirmPassword\": \"1234\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local}}/api/user/signup",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"api",
+								"user",
+								"signup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nationalId\": \"0137421389\",\r\n    \"password\": \"12345\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local}}/api/user/login",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"api",
+								"user",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "agentManagerService",
+			"item": [
+				{
+					"name": "otp",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"phoneNumber\":\"09353133959\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{dev}}/api/agent/otp",
+							"host": [
+								"{{dev}}"
+							],
+							"path": [
+								"api",
+								"agent",
+								"otp"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "resetPassword",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nationalId\":\"0279773838\",\r\n    \"newPassword\": \"12345\",\r\n    \"confirmNewPassword\": \"12345\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local}}/api/agent/resetPassword",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"api",
+								"agent",
+								"resetPassword"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "resetPasswordOtp",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"phoneNumber\":\"09353133959\",\r\n    \"nationalId\": \"02797738\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local}}/api/agent/resetPasswordOtp",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"api",
+								"agent",
+								"resetPasswordOtp"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "signup",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"phoneNumber\":\"09353133959\",\r\n    \"fullName\": \"سیدرضا حسینی\",\r\n    \"nationalId\": \"1234567891\",\r\n    \"birthDate\": \"1376/12/20\",\r\n    \"maritalStatus\" : false,\r\n    \"skills\" :\"[\\\"فلاتر\\\",\\\"برنامه نویسی موبایل\\\"]\",\r\n    \"landline\": \"05132586618\",\r\n    \"address\": \"مشهد ، بلوار هاشمیه ، هاشمیه 12 ، پلاک 20\",\r\n    \"lat\":37.546121,\r\n    \"lng\":68.45211,\r\n    \"fatherName\": \"سیدمحمد\",\r\n    \"gender\": \"male\",\r\n    \"password\": \"123456\",\r\n    \"confirmPassword\": \"123456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local}}/api/agent/signup",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"api",
+								"agent",
+								"signup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateAgent",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"fullName\": \"سیدرضا حسینی 2\",\r\n    \"agentId\": \"62c00501-8b0d-472e-a3e4-2d42a5fe0cee\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local}}/api/agent/update",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"api",
+								"agent",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateOtp",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"phoneNumber\":\"09353133959\",\r\n    \"otp\":9275\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local}}/api/agent/updateOtp",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"api",
+								"agent",
+								"updateOtp"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "checkPaymentStatus",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{dev}}/api/agent/status?nationalId=0279773382",
+							"host": [
+								"{{dev}}"
+							],
+							"path": [
+								"api",
+								"agent",
+								"status"
+							],
+							"query": [
+								{
+									"key": "nationalId",
+									"value": "0279773382"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nationalId\": \"1234567891\",\r\n    \"password\": \"123456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local}}/api/agent/login",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"api",
+								"agent",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "paymentService",
+			"item": [
+				{
+					"name": "paymentRequestForSignUp",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"amount\": 10000,\r\n    \"phoneNumber\": \"09353133959\",\r\n    \"category\": \"agentSignup\",\r\n    \"nationalId\": \"1234567891\",\r\n    \"description\": \"مبلغ 15 هزار تومن جهت احراز هویت\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{domain}}/api/payment/request",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"api",
+								"payment",
+								"request"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "success",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"amount\": 10000,\r\n    \"phoneNumber\": \"09353133959\",\r\n    \"category\": \"agentSignup\",\r\n    \"nationalId\": \"1234567891\",\r\n    \"description\": \"مبلغ 15 هزار تومن جهت احراز هویت\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{domain}}/api/payment/request",
+									"host": [
+										"{{domain}}"
+									],
+									"path": [
+										"api",
+										"payment",
+										"request"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Sat, 14 May 2022 14:52:08 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=65"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"114-2eMw/uvLWpYA4gYCG8e+4ltIUFc\""
+								},
+								{
+									"key": "Server",
+									"value": "ArvanCloud"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "AR-PoweredBy",
+									"value": "Arvan Cloud (arvancloud.com)"
+								},
+								{
+									"key": "AR-SID",
+									"value": "2100"
+								},
+								{
+									"key": "AR-ATIME",
+									"value": "0.137"
+								},
+								{
+									"key": "AR-Request-ID",
+									"value": "991aea717261be7c379bc10af3676baa"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "br"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"data\": {\n        \"message\": \"عملیات با موفقیت انجام شد\",\n        \"result\": {\n            \"redirectURL\": \"https://sadad.shaparak.ir/VPG/Purchase?Token=000159CEFE485C5BB1375F3B024541DFB1FF82D9763808873AAA\",\n            \"token\": \"000159CEFE485C5BB1375F3B024541DFB1FF82D9763808873AAA\"\n        }\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "paymentRequestForWallet",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"amount\": 10000,\r\n    \"phoneNumber\": \"09353133959\",\r\n    \"category\": \"wallet\",\r\n    \"id\":\"7f57183b-7623-4c80-82c6-7c263fc9ecc6\",\r\n    \"nationalId\": \"1234567891\",\r\n    \"description\": \"شارژ کیف پول\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{domain}}/api/payment/request",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"api",
+								"payment",
+								"request"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "success",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"amount\": 10000,\r\n    \"phoneNumber\": \"09353133959\",\r\n    \"category\": \"wallet\",\r\n    \"id\":\"cc4d3f0c-4bcc-4fd7-b425-7aa20349dea1\",\r\n    \"nationalId\": \"1234567891\",\r\n    \"description\": \"شارژ کیف پول\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{domain}}/api/payment/request",
+									"host": [
+										"{{domain}}"
+									],
+									"path": [
+										"api",
+										"payment",
+										"request"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Sat, 14 May 2022 14:52:29 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=65"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"114-FcCBE79IMVPUftCuQK6tq+PUngE\""
+								},
+								{
+									"key": "Server",
+									"value": "ArvanCloud"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "AR-PoweredBy",
+									"value": "Arvan Cloud (arvancloud.com)"
+								},
+								{
+									"key": "AR-SID",
+									"value": "2100"
+								},
+								{
+									"key": "AR-ATIME",
+									"value": "0.109"
+								},
+								{
+									"key": "AR-Request-ID",
+									"value": "9df7c6e41f5f8fde57a276168b859995"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "br"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"data\": {\n        \"message\": \"عملیات با موفقیت انجام شد\",\n        \"result\": {\n            \"redirectURL\": \"https://sadad.shaparak.ir/VPG/Purchase?Token=000159CEFE485C5BB137E22F9606D647C1B3D59C30654CBC6371\",\n            \"token\": \"000159CEFE485C5BB137E22F9606D647C1B3D59C30654CBC6371\"\n        }\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "check",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{domain}}/api/payment/check?token=000159CEFE485C5BB137B5936FE79A520F9233B8AD16C2FFBE33",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"api",
+								"payment",
+								"check"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "000159CEFE485C5BB137B5936FE79A520F9233B8AD16C2FFBE33"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "statusFalse",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{domain}}/api/payment/check?token=000159CEFE485C5BB137FF98E120650D32315932E722216D1DED",
+									"host": [
+										"{{domain}}"
+									],
+									"path": [
+										"api",
+										"payment",
+										"check"
+									],
+									"query": [
+										{
+											"key": "token",
+											"value": "000159CEFE485C5BB137FF98E120650D32315932E722216D1DED"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Sat, 14 May 2022 14:40:15 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=65"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"15a-7qHbut1cMZVY1UNTn9q8mEbhvz0\""
+								},
+								{
+									"key": "Server",
+									"value": "ArvanCloud"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "AR-PoweredBy",
+									"value": "Arvan Cloud (arvancloud.com)"
+								},
+								{
+									"key": "AR-SID",
+									"value": "2100"
+								},
+								{
+									"key": "AR-ATIME",
+									"value": "0.526"
+								},
+								{
+									"key": "AR-CACHE",
+									"value": "BYPASS"
+								},
+								{
+									"key": "AR-Request-ID",
+									"value": "623c9eb86912a65596e9ed9d78d06ea3"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "br"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"message\": \"پرداخت ناموفق بود برای تلاش مجدد اقدام نمایید\",\n        \"result\": {\n            \"status\": false,\n            \"trackingNumber\": null,\n            \"orderId\": null,\n            \"token\": \"000159CEFE485C5BB1379D3E18DB47A36A9FBD5B83F3C5F4310F\",\n            \"redirectUrl\": \"https://sadad.shaparak.ir/VPG/Purchase?Token=000159CEFE485C5BB1379D3E18DB47A36A9FBD5B83F3C5F4310F\"\n        }\n    }\n}"
+						},
+						{
+							"name": "statusTrue",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{domain}}/api/payment/check?token=000159CEFE485C5BB137B5936FE79A520F9233B8AD16C2FFBE33",
+									"host": [
+										"{{domain}}"
+									],
+									"path": [
+										"api",
+										"payment",
+										"check"
+									],
+									"query": [
+										{
+											"key": "token",
+											"value": "000159CEFE485C5BB137B5936FE79A520F9233B8AD16C2FFBE33"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Sat, 14 May 2022 14:51:37 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=65"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"bf-nA4bPPIuH/Mlq/gOWJQI+xFurec\""
+								},
+								{
+									"key": "Server",
+									"value": "ArvanCloud"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "AR-PoweredBy",
+									"value": "Arvan Cloud (arvancloud.com)"
+								},
+								{
+									"key": "AR-SID",
+									"value": "2100"
+								},
+								{
+									"key": "AR-ATIME",
+									"value": "0.036"
+								},
+								{
+									"key": "AR-CACHE",
+									"value": "BYPASS"
+								},
+								{
+									"key": "AR-Request-ID",
+									"value": "c931c1985e8da37190b4b45633bb15ce"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "br"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"message\": \"پرداخت با موفقیت انجام شده است\",\n        \"result\": {\n            \"status\": true,\n            \"trackingNumber\": \"322200123399\",\n            \"orderId\": 1646466064086,\n            \"token\": null,\n            \"redirectUrl\": null\n        }\n    }\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "general",
+			"item": [
+				{
+					"name": "questions",
+					"item": [
+						{
+							"name": "surveyQuestion",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{domain}}/api/general/surveyQuestion?type=user",
+									"host": [
+										"{{domain}}"
+									],
+									"path": [
+										"api",
+										"general",
+										"surveyQuestion"
+									],
+									"query": [
+										{
+											"key": "type",
+											"value": "user"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "agentQuestions",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{domain}}/api/general/surveyQuestion?type=agent",
+											"host": [
+												"{{domain}}"
+											],
+											"path": [
+												"api",
+												"general",
+												"surveyQuestion"
+											],
+											"query": [
+												{
+													"key": "type",
+													"value": "agent"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Date",
+											"value": "Sat, 14 May 2022 15:07:50 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=65"
+										},
+										{
+											"key": "Vary",
+											"value": "Accept-Encoding"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"15f-LMhr4arhceOPTM3Bjrt8Jtpv618\""
+										},
+										{
+											"key": "Server",
+											"value": "ArvanCloud"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "1; mode=block"
+										},
+										{
+											"key": "AR-PoweredBy",
+											"value": "Arvan Cloud (arvancloud.com)"
+										},
+										{
+											"key": "AR-SID",
+											"value": "2100"
+										},
+										{
+											"key": "AR-ATIME",
+											"value": "0.044"
+										},
+										{
+											"key": "AR-CACHE",
+											"value": "BYPASS"
+										},
+										{
+											"key": "AR-Request-ID",
+											"value": "2e969a9d688188865b0d80f1ca1408e4"
+										},
+										{
+											"key": "Content-Encoding",
+											"value": "br"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"status\": \"success\",\n    \"data\": {\n        \"message\": \"دریافت سوالات نظرسنجی با موفقیت انجام شد\",\n        \"result\": [\n            {\n                \"text\": \"راضی بودین ؟\",\n                \"category\": \"survey\",\n                \"type\": \"user\",\n                \"id\": \"50e5cc58-563e-4fdc-829e-79379b32ecfe\"\n            },\n            {\n                \"text\": \"سلام خوبین ؟\",\n                \"category\": \"survey\",\n                \"type\": \"user\",\n                \"id\": \"e828c4de-f6ae-4c9b-b291-ca139121591e\"\n            }\n        ]\n    }\n}"
+								},
+								{
+									"name": "userQuestions",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{domain}}/api/general/surveyQuestion?type=user",
+											"host": [
+												"{{domain}}"
+											],
+											"path": [
+												"api",
+												"general",
+												"surveyQuestion"
+											],
+											"query": [
+												{
+													"key": "type",
+													"value": "user"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Date",
+											"value": "Sat, 14 May 2022 15:11:47 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=65"
+										},
+										{
+											"key": "Vary",
+											"value": "Accept-Encoding"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"15f-LMhr4arhceOPTM3Bjrt8Jtpv618\""
+										},
+										{
+											"key": "Server",
+											"value": "ArvanCloud"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "1; mode=block"
+										},
+										{
+											"key": "AR-PoweredBy",
+											"value": "Arvan Cloud (arvancloud.com)"
+										},
+										{
+											"key": "AR-SID",
+											"value": "2100"
+										},
+										{
+											"key": "AR-ATIME",
+											"value": "0.052"
+										},
+										{
+											"key": "AR-CACHE",
+											"value": "BYPASS"
+										},
+										{
+											"key": "AR-Request-ID",
+											"value": "85cfd8caff6fbb7c53c5d3849ec3d9f2"
+										},
+										{
+											"key": "Content-Encoding",
+											"value": "br"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"status\": \"success\",\n    \"data\": {\n        \"message\": \"دریافت سوالات نظرسنجی با موفقیت انجام شد\",\n        \"result\": [\n            {\n                \"text\": \"راضی بودین ؟\",\n                \"category\": \"survey\",\n                \"type\": \"user\",\n                \"id\": \"50e5cc58-563e-4fdc-829e-79379b32ecfe\"\n            },\n            {\n                \"text\": \"سلام خوبین ؟\",\n                \"category\": \"survey\",\n                \"type\": \"user\",\n                \"id\": \"e828c4de-f6ae-4c9b-b291-ca139121591e\"\n            }\n        ]\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "cancellationQuestion",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{domain}}/api/general/cancellationQuestion?type=agent",
+									"host": [
+										"{{domain}}"
+									],
+									"path": [
+										"api",
+										"general",
+										"cancellationQuestion"
+									],
+									"query": [
+										{
+											"key": "type",
+											"value": "agent"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "user",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{domain}}/api/general/cancellationQuestion?type=user",
+											"host": [
+												"{{domain}}"
+											],
+											"path": [
+												"api",
+												"general",
+												"cancellationQuestion"
+											],
+											"query": [
+												{
+													"key": "type",
+													"value": "user"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Date",
+											"value": "Sat, 14 May 2022 15:45:12 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=65"
+										},
+										{
+											"key": "Vary",
+											"value": "Accept-Encoding"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"148-NvKkHa9sRNjvp91/0QMut/SyDco\""
+										},
+										{
+											"key": "Server",
+											"value": "ArvanCloud"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "1; mode=block"
+										},
+										{
+											"key": "AR-PoweredBy",
+											"value": "Arvan Cloud (arvancloud.com)"
+										},
+										{
+											"key": "AR-SID",
+											"value": "2100"
+										},
+										{
+											"key": "AR-ATIME",
+											"value": "0.052"
+										},
+										{
+											"key": "AR-CACHE",
+											"value": "BYPASS"
+										},
+										{
+											"key": "AR-Request-ID",
+											"value": "d79c054bf019cedcfa7cc0c7838264a2"
+										},
+										{
+											"key": "Content-Encoding",
+											"value": "br"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"status\": \"success\",\n    \"data\": {\n        \"message\": \"دریافت سوالات با موفقیت انجام شد\",\n        \"result\": [\n            {\n                \"text\": \"س\",\n                \"category\": \"cancellation\",\n                \"type\": \"user\",\n                \"id\": \"47c53667-1314-4533-92ff-18f0425f964e\"\n            },\n            {\n                \"text\": \"سلام خوبین ؟\",\n                \"category\": \"cancellation\",\n                \"type\": \"user\",\n                \"id\": \"caff4608-fa90-4312-aa5a-023bd3993d41\"\n            }\n        ]\n    }\n}"
+								},
+								{
+									"name": "agent",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{domain}}/api/general/cancellationQuestion?type=agent",
+											"host": [
+												"{{domain}}"
+											],
+											"path": [
+												"api",
+												"general",
+												"cancellationQuestion"
+											],
+											"query": [
+												{
+													"key": "type",
+													"value": "agent"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Date",
+											"value": "Sat, 14 May 2022 15:45:53 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=65"
+										},
+										{
+											"key": "Vary",
+											"value": "Accept-Encoding"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"245-ao3emUgUXLTbTeHAc7MBjINqxMM\""
+										},
+										{
+											"key": "Server",
+											"value": "ArvanCloud"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "1; mode=block"
+										},
+										{
+											"key": "AR-PoweredBy",
+											"value": "Arvan Cloud (arvancloud.com)"
+										},
+										{
+											"key": "AR-SID",
+											"value": "2100"
+										},
+										{
+											"key": "AR-ATIME",
+											"value": "1.504"
+										},
+										{
+											"key": "AR-CACHE",
+											"value": "BYPASS"
+										},
+										{
+											"key": "AR-Request-ID",
+											"value": "f7b89b108db8c49390e67a14b6bdda87"
+										},
+										{
+											"key": "Content-Encoding",
+											"value": "br"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"status\": \"success\",\n    \"data\": {\n        \"message\": \"دریافت سوالات با موفقیت انجام شد\",\n        \"result\": [\n            {\n                \"text\": \"دیگه حالت چطوره ؟\",\n                \"category\": \"cancellation\",\n                \"type\": \"agent\",\n                \"id\": \"b6a9cc33-4f06-46f4-9935-f3411dc0bc2d\"\n            },\n            {\n                \"text\": \"خب چرا میخوای سرویس رو لغو کنی مگه از پول بدت میاد ؟\",\n                \"category\": \"cancellation\",\n                \"type\": \"agent\",\n                \"id\": \"4da7165d-d6da-4c94-926b-1c2cc61d0ec6\"\n            },\n            {\n                \"text\": \"حالا لغو میکنی لغو ولی خب چرا ؟\",\n                \"category\": \"cancellation\",\n                \"type\": \"agent\",\n                \"id\": \"70f73c4d-bbec-4aac-93b4-1e02883c3648\"\n            }\n        ]\n    }\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "category",
+					"item": [
+						{
+							"name": "searchCategories",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"item\":\"           یخچال\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{domain}}/api/general/searchCategories",
+									"host": [
+										"{{domain}}"
+									],
+									"path": [
+										"api",
+										"general",
+										"searchCategories"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getSubCategories",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"type\": 2,\r\n    \"parentCategoryId\": \"01d2cf00-54f9-46f9-bf13-acbd3bd4000f\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{dev}}/api/general/subCategories",
+									"host": [
+										"{{dev}}"
+									],
+									"path": [
+										"api",
+										"general",
+										"subCategories"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getAllCategories",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{domain}}/api/general/categories",
+									"host": [
+										"{{domain}}"
+									],
+									"path": [
+										"api",
+										"general",
+										"categories"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "success",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{domain}}/api/general/categories",
+											"host": [
+												"{{domain}}"
+											],
+											"path": [
+												"api",
+												"general",
+												"categories"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Date",
+											"value": "Sat, 14 May 2022 15:55:06 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Keep-Alive",
+											"value": "timeout=65"
+										},
+										{
+											"key": "Vary",
+											"value": "Accept-Encoding"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"2fa-S0L14mb4w+vJlgUVT5UunwKqZbY\""
+										},
+										{
+											"key": "Server",
+											"value": "ArvanCloud"
+										},
+										{
+											"key": "X-XSS-Protection",
+											"value": "1; mode=block"
+										},
+										{
+											"key": "AR-PoweredBy",
+											"value": "Arvan Cloud (arvancloud.com)"
+										},
+										{
+											"key": "AR-SID",
+											"value": "2100"
+										},
+										{
+											"key": "AR-ATIME",
+											"value": "0.114"
+										},
+										{
+											"key": "AR-CACHE",
+											"value": "BYPASS"
+										},
+										{
+											"key": "AR-Request-ID",
+											"value": "fca18d4397a945876d3673472fe137ba"
+										},
+										{
+											"key": "Content-Encoding",
+											"value": "br"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"status\": \"success\",\n    \"data\": {\n        \"message\": \"دریافت دسته بندی ها با موفقیت انجام شد\",\n        \"result\": [\n            {\n                \"name\": \"تعمیرات خودرو\",\n                \"type\": 1,\n                \"iconUrl\": \"http://hivepanell.ir/uploads/category/6434e8de-9af0-44ff-90f8-2eed49e09b12.jpg\",\n                \"id\": \"6434e8de-9af0-44ff-90f8-2eed49e09b12\",\n                \"date\": \"1401/01/07\",\n                \"time\": \"06:38:07\"\n            },\n            {\n                \"name\": \"خدمات نظافتی\",\n                \"type\": 1,\n                \"iconUrl\": \"http://hivepanell.ir/uploads/category/70bf4a7d-5569-456b-a8dd-0859e909d651.jpg\",\n                \"id\": \"70bf4a7d-5569-456b-a8dd-0859e909d651\",\n                \"date\": \"1401/01/07\",\n                \"time\": \"07:19:55\"\n            },\n            {\n                \"name\": \"پوشاک\",\n                \"type\": 1,\n                \"iconUrl\": \"http://hivepanell.ir/uploads/category/49d40f15-e0bd-4339-8ee6-a3ef21f5761c.jpg\",\n                \"id\": \"49d40f15-e0bd-4339-8ee6-a3ef21f5761c\",\n                \"date\": \"1401/01/07\",\n                \"time\": \"09:45:01\"\n            }\n        ]\n    }\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "skills",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{domain}}/api/general/skills",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"api",
+								"general",
+								"skills"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "aboutUs",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{domain}}/api/general/aboutUs",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"api",
+								"general",
+								"aboutUs"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "rules",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{domain}}/api/general/rules",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"api",
+								"general",
+								"rules"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "contanctUs",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{domain}}/api/general/contactUs",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"api",
+								"general",
+								"contactUs"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "discounts",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{local}}/api/general/discount?userId=8b1b59ef-4b5a-4f70-94ac-ed9010d40cff",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"api",
+								"general",
+								"discount"
+							],
+							"query": [
+								{
+									"key": "userId",
+									"value": "8b1b59ef-4b5a-4f70-94ac-ed9010d40cff"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{local}}/api/general/discount?userId=8b1b59ef-4b5a-4f70-94ac-ed9010d40cff",
+									"host": [
+										"{{local}}"
+									],
+									"path": [
+										"api",
+										"general",
+										"discount"
+									],
+									"query": [
+										{
+											"key": "userId",
+											"value": "8b1b59ef-4b5a-4f70-94ac-ed9010d40cff"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "861"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"35d-Vm529Fnq6Mw/c/ank2xU0yYFWeg\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 16 May 2022 15:38:41 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"data\": {\n        \"message\": \"کد تخفیف ها با موفقیت دریافت شد\",\n        \"result\": [\n            {\n                \"id\": \"697c93e0-fb8d-4bde-8da3-becd25f3ecb4\",\n                \"code\": \"SQIS4W5\",\n                \"patternId\": \"abc11cd2-5ee5-4fe9-acea-13000c9074fa\",\n                \"insertedDate\": \"1400/12/14\",\n                \"userId\": \"8b1b59ef-4b5a-4f70-94ac-ed9010d40cff\",\n                \"amount\": 300000,\n                \"expirationDate\": \"1400/12/20\",\n                \"isUsed\": false\n            },\n            {\n                \"id\": \"48eb8919-7a2e-4c48-b0ec-523bcfe2487f\",\n                \"code\": \"O89Z3JC\",\n                \"patternId\": \"cd70f07d-e34f-458c-8e82-393fdea8a9b7\",\n                \"insertedDate\": \"1400/12/14\",\n                \"userId\": \"8b1b59ef-4b5a-4f70-94ac-ed9010d40cff\",\n                \"amount\": 500000,\n                \"expirationDate\": \"1400/12/16\",\n                \"isUsed\": false\n            },\n            {\n                \"id\": \"085bfe59-0aae-44c3-87fd-98cc25c19e9a\",\n                \"code\": \"NY0LLDY\",\n                \"patternId\": \"24992d43-17d0-4d68-a10a-5c098d40d6f3\",\n                \"insertedDate\": \"1400/12/14\",\n                \"userId\": \"8b1b59ef-4b5a-4f70-94ac-ed9010d40cff\",\n                \"amount\": 990000,\n                \"expirationDate\": \"1401/02/01\",\n                \"isUsed\": true\n            }\n        ]\n    }\n}"
+						},
+						{
+							"name": "notFound",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{local}}/api/general/discount?userId=8b1b59ef-4b5a-4f70-94ac-ed9010d40cffs",
+									"host": [
+										"{{local}}"
+									],
+									"path": [
+										"api",
+										"general",
+										"discount"
+									],
+									"query": [
+										{
+											"key": "userId",
+											"value": "8b1b59ef-4b5a-4f70-94ac-ed9010d40cffs"
+										}
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "72"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"48-MUx9sL+T1Eqg6+IRwtq2ezx/57Y\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 16 May 2022 16:12:54 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"fail\",\n    \"data\": {\n        \"message\": \"کد تخفیفی یافت نشد\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "useDiscount",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userId\": \"be57a07a-4826-47d4-b325-026560f8bd99\",\r\n    \"code\": \"6AGCAA0\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{dev}}/api/general/discount",
+							"host": [
+								"{{dev}}"
+							],
+							"path": [
+								"api",
+								"general",
+								"discount"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "success",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"userId\": \"be57a07a-4826-47d4-b325-026560f8bd99\",\r\n    \"code\": \"6AGCAA0\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{local}}/api/general/discount",
+									"host": [
+										"{{local}}"
+									],
+									"path": [
+										"api",
+										"general",
+										"discount"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "368"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"170-ZjogJPDCi2VPjPyXeW6qSSFI564\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 16 May 2022 16:19:56 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"data\": {\n        \"message\": \"کد تخفیف با موفقیت ویرایش و دریافت شد\",\n        \"result\": {\n            \"id\": \"8f961c54-a9c0-44c5-92b5-7dc28fd46da0\",\n            \"code\": \"6AGCAA0\",\n            \"patternId\": \"24992d43-17d0-4d68-a10a-5c098d40d6f3\",\n            \"insertedDate\": \"1400/12/14\",\n            \"userId\": \"be57a07a-4826-47d4-b325-026560f8bd99\",\n            \"amount\": 990000,\n            \"expirationDate\": \"1402/01/01\",\n            \"isUsed\": true\n        }\n    }\n}"
+						},
+						{
+							"name": "fail1",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"userId\": \"be57a07a-4826-47d4-b325-026560f8bd99\",\r\n    \"code\": \"6AGCAA0\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{local}}/api/general/discount",
+									"host": [
+										"{{local}}"
+									],
+									"path": [
+										"api",
+										"general",
+										"discount"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "79"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"4f-fq461C4w0F6FHMPLIuoJhlSqy7c\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 16 May 2022 16:21:10 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"fail\",\n    \"data\": {\n        \"message\": \"کد تخفیف منقضی شده است\"\n    }\n}"
+						},
+						{
+							"name": "fail2",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"userId\": \"be57a07a-4826-47d4-b325-026560f8bd99\",\r\n    \"code\": \"6AGCAAs0\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{local}}/api/general/discount",
+									"host": [
+										"{{local}}"
+									],
+									"path": [
+										"api",
+										"general",
+										"discount"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "74"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"4a-E1Xag2S7QUO2Y7L1A/Hxi2PDtI8\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 16 May 2022 16:21:32 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"fail\",\n    \"data\": {\n        \"message\": \"کد تخفیف معتبر نیست\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "prizes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{domain}}/api/general/prizes",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"api",
+								"general",
+								"prizes"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{domain}}/api/general/prizes",
+									"host": [
+										"{{domain}}"
+									],
+									"path": [
+										"api",
+										"general",
+										"prizes"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Mon, 16 May 2022 16:41:57 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=65"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"344-xy3cY61IsFajaOLSIHOkBFJi64w\""
+								},
+								{
+									"key": "Server",
+									"value": "ArvanCloud"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "AR-PoweredBy",
+									"value": "Arvan Cloud (arvancloud.com)"
+								},
+								{
+									"key": "AR-SID",
+									"value": "2100"
+								},
+								{
+									"key": "AR-ATIME",
+									"value": "0.048"
+								},
+								{
+									"key": "AR-CACHE",
+									"value": "BYPASS"
+								},
+								{
+									"key": "AR-Request-ID",
+									"value": "5d8b1d893f81965859a407a30003c3a3"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "br"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"data\": {\n        \"message\": \"جوایز با موفقیت دریافت شد\",\n        \"result\": [\n            {\n                \"title\": \"جشنواره ویژه نیمه شعبان\",\n                \"description\": \"به مناسبت نیمه شعبان تمامی سرویس ها نیم بها محاسبه می شود.\",\n                \"expirationDate\": \"1400/11/29\",\n                \"id\": \"5e8b53c2-83bd-4614-b3c9-faabef117b72\",\n                \"insertedDate\": \"1400/12/15\"\n            },\n            {\n                \"title\": \"برنامه تخفیفی ویژه سال نو\",\n                \"description\": \"به مناسبت سال جدید تخفیف های شگفت انگیزی برای هایو داریم لطفا منتظر بمون\",\n                \"expirationDate\": \"1401/01/13\",\n                \"id\": \"b1f0b732-4f0c-49bc-a820-fa80991f94b4\",\n                \"insertedDate\": \"1400/12/15\"\n            },\n            {\n                \"title\": \"sdasdad\",\n                \"description\": \"asdasdasdad\",\n                \"expirationDate\": \"1400/12/4\",\n                \"id\": \"67a239f9-4ff2-489a-a23f-afaf1e247ed6\",\n                \"insertedDate\": \"1400/12/16\"\n            }\n        ]\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "prize",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{domain}}/api/general/prize?id=5e8b53c2-83bd-4614-b3c9-faabef117b72",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"api",
+								"general",
+								"prize"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "5e8b53c2-83bd-4614-b3c9-faabef117b72"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{domain}}/api/general/prize?id=5e8b53c2-83bd-4614-b3c9-faabef117b72",
+									"host": [
+										"{{domain}}"
+									],
+									"path": [
+										"api",
+										"general",
+										"prize"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "5e8b53c2-83bd-4614-b3c9-faabef117b72"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Mon, 16 May 2022 16:44:11 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=65"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"178-L0v/uBoXVQx9tce3r/ZoN8tsdj0\""
+								},
+								{
+									"key": "Server",
+									"value": "ArvanCloud"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "AR-PoweredBy",
+									"value": "Arvan Cloud (arvancloud.com)"
+								},
+								{
+									"key": "AR-SID",
+									"value": "2100"
+								},
+								{
+									"key": "AR-ATIME",
+									"value": "0.080"
+								},
+								{
+									"key": "AR-CACHE",
+									"value": "BYPASS"
+								},
+								{
+									"key": "AR-Request-ID",
+									"value": "ca0522177babef41f5b175e46be77ecc"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "br"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"data\": {\n        \"message\": \"جایزه با موفقیت دریافت شد\",\n        \"result\": {\n            \"title\": \"جشنواره ویژه نیمه شعبان\",\n            \"description\": \"به مناسبت نیمه شعبان تمامی سرویس ها نیم بها محاسبه می شود.\",\n            \"expirationDate\": \"1400/11/29\",\n            \"id\": \"5e8b53c2-83bd-4614-b3c9-faabef117b72\",\n            \"insertedDate\": \"1400/12/15\"\n        }\n    }\n}"
+						},
+						{
+							"name": "null",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{domain}}/api/general/prize?id=5e8b53c2-83bd-4614-b3c9-faabef117b72s",
+									"host": [
+										"{{domain}}"
+									],
+									"path": [
+										"api",
+										"general",
+										"prize"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "5e8b53c2-83bd-4614-b3c9-faabef117b72s"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Mon, 16 May 2022 16:45:44 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=65"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"66-+06QUexstdMn4c44ovKxeP7G78s\""
+								},
+								{
+									"key": "Server",
+									"value": "ArvanCloud"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "AR-PoweredBy",
+									"value": "Arvan Cloud (arvancloud.com)"
+								},
+								{
+									"key": "AR-SID",
+									"value": "2100"
+								},
+								{
+									"key": "AR-ATIME",
+									"value": "0.052"
+								},
+								{
+									"key": "AR-CACHE",
+									"value": "BYPASS"
+								},
+								{
+									"key": "AR-Request-ID",
+									"value": "de1cf793328a8392892be5cf2228425f"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "br"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"data\": {\n        \"message\": \"جایزه با موفقیت دریافت شد\",\n        \"result\": null\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "mission",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{local}}/api/general/mission?agentId=62c00501-8b0d-472e-a3e4-2d42a5fe0cee",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"api",
+								"general",
+								"mission"
+							],
+							"query": [
+								{
+									"key": "agentId",
+									"value": "62c00501-8b0d-472e-a3e4-2d42a5fe0cee"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "noMission",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{local}}/api/general/mission?agentId=62c00501-8b0d-472e-a3e4-2d42a5fe0cee",
+									"host": [
+										"{{local}}"
+									],
+									"path": [
+										"api",
+										"general",
+										"mission"
+									],
+									"query": [
+										{
+											"key": "agentId",
+											"value": "62c00501-8b0d-472e-a3e4-2d42a5fe0cee"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "90"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"5a-lKrBeFkv1ZQJ60Fyb+uxKfiyVBg\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 21 May 2022 15:15:23 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"data\": {\n        \"message\": \"ماموریتی برای شما یافت نشد\"\n    }\n}"
+						},
+						{
+							"name": "success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{local}}/api/general/mission?agentId=62c00501-8b0d-472e-a3e4-2d42a5fe0cee",
+									"host": [
+										"{{local}}"
+									],
+									"path": [
+										"api",
+										"general",
+										"mission"
+									],
+									"query": [
+										{
+											"key": "agentId",
+											"value": "62c00501-8b0d-472e-a3e4-2d42a5fe0cee"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "446"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1be-J2rKlh1cRhqitjvQYHm/Tc3oTO0\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 21 May 2022 15:26:51 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"data\": {\n        \"message\": \"ماموریت ها با موفقیت دریافت شد\",\n        \"result\": [\n            {\n                \"title\": \"ماموریت جدید\",\n                \"description\": \"ماموریت برای تدریس ریاضی\",\n                \"categoryId\": [\n                    \"2edf961d-968f-4588-bf06-9fbbdaa792ba\",\n                    \"e2114312-debb-49af-b74c-e8b70e0df27e\"\n                ],\n                \"startTime\": \"09:00:00\",\n                \"endTime\": \"17:00:00\",\n                \"startDate\": \"14010103\",\n                \"endDate\": \"14020103\",\n                \"value\": 500000,\n                \"id\": \"77f0560e-dfbc-46a1-b859-b9acf293b5c1\"\n            }\n        ]\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "missionCounter",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{local}}/api/general/missionCounter?agentId=758dcd91-d27f-4098-a79d-ad94a8fcdb55",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"api",
+								"general",
+								"missionCounter"
+							],
+							"query": [
+								{
+									"key": "agentId",
+									"value": "758dcd91-d27f-4098-a79d-ad94a8fcdb55"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{local}}/api/general/missionCounter?agentId=758dcd91-d27f-4098-a79d-ad94a8fcdb55",
+									"host": [
+										"{{local}}"
+									],
+									"path": [
+										"api",
+										"general",
+										"missionCounter"
+									],
+									"query": [
+										{
+											"key": "agentId",
+											"value": "758dcd91-d27f-4098-a79d-ad94a8fcdb55"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "227"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"e3-zc9bNldtLIn/AsNkuRX+vKXAHvY\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 21 May 2022 15:27:17 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"data\": {\n        \"message\": \"تعداد ماموریت ها با موفقیت دریافت شد\",\n        \"result\": {\n            \"title\": \"\",\n            \"agentId\": \"758dcd91-d27f-4098-a79d-ad94a8fcdb55\",\n            \"categoryId\": \"\",\n            \"date\": \"1401/02/31\",\n            \"counter\": 0\n        }\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "updateLinks",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{dev}}/api/general/update",
+							"host": [
+								"{{dev}}"
+							],
+							"path": [
+								"api",
+								"general",
+								"update"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{dev}}/api/general/update",
+									"host": [
+										"{{dev}}"
+									],
+									"path": [
+										"api",
+										"general",
+										"update"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.14.2"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 16 May 2022 16:47:19 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "307"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"133-YfF6KhQUkrjfjk7UqQKLMwAz/Q0\""
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"data\": {\n        \"message\": \" لینک های آپدیت با موفقیت دریافت شد\",\n        \"result\": {\n            \"cafeBazaar\": \"https://cafebazaar.ir/app/\",\n            \"googlePlay\": \"https://play.google.com/store/apps?gl=NL/\",\n            \"myket\": \"https://myket.ir/\",\n            \"id\": \"4c98119e-c14f-4892-a87a-0f5fc214c1da\",\n            \"date\": \"1400/12/17\"\n        }\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "guide",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{domain}}/api/general/guide",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"api",
+								"general",
+								"guide"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{domain}}/api/general/guide",
+									"host": [
+										"{{domain}}"
+									],
+									"path": [
+										"api",
+										"general",
+										"guide"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Mon, 16 May 2022 16:48:08 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=65"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1a7-H/0cQ/p2tO7or8gU+i4UD7HEZsw\""
+								},
+								{
+									"key": "Server",
+									"value": "ArvanCloud"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "AR-PoweredBy",
+									"value": "Arvan Cloud (arvancloud.com)"
+								},
+								{
+									"key": "AR-SID",
+									"value": "2100"
+								},
+								{
+									"key": "AR-ATIME",
+									"value": "0.110"
+								},
+								{
+									"key": "AR-CACHE",
+									"value": "BYPASS"
+								},
+								{
+									"key": "AR-Request-ID",
+									"value": "e038a603239a9cb2ae33970d2feb4c0c"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "br"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"data\": {\n        \"message\": \" لینک های آپدیت با موفقیت دریافت شد\",\n        \"result\": {\n            \"description\": \"برای آشنایی بیشتر با پلتفرم هایو به صفحات اینستاگرام ما سر بزنید \",\n            \"instagram\": \"https://www.instagram.com/\",\n            \"whatsapp\": \"https://web.whatsapp.com/\",\n            \"phoneNumber\": \"09353133954\",\n            \"id\": \"bd73a781-adcd-4343-8ada-a0430cf1b085\",\n            \"date\": \"1400/12/16\"\n        }\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "invitation",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"phoneNumber\": \"09353133959\",\r\n    \"agentId\": \"6eddba7f-0b9e-4106-a0d9-40be545cd7b1\",\r\n    \"type\": \"agent\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local}}/api/general/invitation",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"api",
+								"general",
+								"invitation"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "conflct-Number",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"phoneNumber\": \"09353133959\",\r\n    \"agentId\": \"6eddba7f-0b9e-4106-a0d9-40be545cd7b1\",\r\n    \"type\": \"agent\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{local}}/api/general/invitation",
+									"host": [
+										"{{local}}"
+									],
+									"path": [
+										"api",
+										"general",
+										"invitation"
+									]
+								}
+							},
+							"status": "Conflict",
+							"code": 409,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "119"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"77-y856J4V/zCwmiyJuMZRojmY/AQg\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 21 May 2022 15:34:44 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"fail\",\n    \"data\": {\n        \"message\": \"شماره مد نظر قبلا در پلتفرم هایو ثبت شده است \"\n    }\n}"
+						},
+						{
+							"name": "inviteAgent",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"phoneNumber\": \"09353133958\",\r\n    \"agentId\": \"6eddba7f-0b9e-4106-a0d9-40be545cd7b1\",\r\n    \"type\": \"agent\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{local}}/api/general/invitation",
+									"host": [
+										"{{local}}"
+									],
+									"path": [
+										"api",
+										"general",
+										"invitation"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "100"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"64-Zqe4ZKyWSyeJlC7GNxXB+pnoevs\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 21 May 2022 15:37:56 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"data\": {\n        \"message\": \"شماره مورد نظر با موفقیت دعوت شد\"\n    }\n}"
+						},
+						{
+							"name": "alreadyInvited",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"phoneNumber\": \"09353133958\",\r\n    \"agentId\": \"6eddba7f-0b9e-4106-a0d9-40be545cd7b1\",\r\n    \"type\": \"agent\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{local}}/api/general/invitation",
+									"host": [
+										"{{local}}"
+									],
+									"path": [
+										"api",
+										"general",
+										"invitation"
+									]
+								}
+							},
+							"status": "Conflict",
+							"code": 409,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "102"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"66-UdlNk9F2q4hrjdbunGLQgX72JDI\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 21 May 2022 15:38:27 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"fail\",\n    \"data\": {\n        \"message\": \"شما قبلا این شماره را دعوت کرده اید\"\n    }\n}"
+						},
+						{
+							"name": "inviteUser",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"phoneNumber\": \"09353133958\",\r\n    \"userId\": \"6eddba7f-0b9e-4106-a0d9-40be545cd7b1\",\r\n    \"type\": \"user\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{local}}/api/general/invitation",
+									"host": [
+										"{{local}}"
+									],
+									"path": [
+										"api",
+										"general",
+										"invitation"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "100"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"64-Zqe4ZKyWSyeJlC7GNxXB+pnoevs\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 21 May 2022 15:39:23 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"data\": {\n        \"message\": \"شماره مورد نظر با موفقیت دعوت شد\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "addTicket",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"چ وضشه 1\",\r\n    \"agentId\": \"62c00501-8b0d-472e-a3e4-2d42a5fe0cee\",\r\n    \"description\": \"این دیگه وضشه واقعا 1 \"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local}}/api/general/ticket",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"api",
+								"general",
+								"ticket"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "successAgent",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"title\": \"چ وضشه 1\",\r\n    \"agentId\": \"62c00501-8b0d-472e-a3e4-2d42a5fe0cee\",\r\n    \"description\": \"این دیگه وضشه واقعا 1 \"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{local}}/api/general/ticket",
+									"host": [
+										"{{local}}"
+									],
+									"path": [
+										"api",
+										"general",
+										"ticket"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "290"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"122-El2ZKLPKLUisG1ruIb9Jnkp41aw\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 21 May 2022 15:57:14 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"message\": \"تیکت شما ثبت شد\",\n        \"result\": {\n            \"title\": \"چ وضشه 1\",\n            \"description\": \"این دیگه وضشه واقعا 1 \",\n            \"id\": \"62c00501-8b0d-472e-a3e4-2d42a5fe0cee\",\n            \"ticketId\": \"75099df6-7e1f-48d5-bf74-c823a0bca4c7\",\n            \"date\": \"14010231\",\n            \"time\": \"20:27:13\",\n            \"checkStatus\": false\n        }\n    }\n}"
+						},
+						{
+							"name": "successUser",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"title\": \"چ وضشه 1\",\r\n    \"userId\": \"7f57183b-7623-4c80-82c6-7c263fc9ecc6\",\r\n    \"description\": \"این دیگه وضشه واقعا 1 \"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{local}}/api/general/ticket",
+									"host": [
+										"{{local}}"
+									],
+									"path": [
+										"api",
+										"general",
+										"ticket"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "290"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"122-HCy+yVMIPKerVHyOZLEl5vTrF/k\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 21 May 2022 16:14:27 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"message\": \"تیکت شما ثبت شد\",\n        \"result\": {\n            \"title\": \"چ وضشه 1\",\n            \"description\": \"این دیگه وضشه واقعا 1 \",\n            \"id\": \"7f57183b-7623-4c80-82c6-7c263fc9ecc6\",\n            \"ticketId\": \"20caf379-5f48-4a8d-a636-d6e2321c596c\",\n            \"date\": \"14010231\",\n            \"time\": \"20:44:26\",\n            \"checkStatus\": false\n        }\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "getBillboard",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{local}}/api/general/billboard",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"api",
+								"general",
+								"billboard"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{local}}/api/general/billboard",
+									"host": [
+										"{{local}}"
+									],
+									"path": [
+										"api",
+										"general",
+										"billboard"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "314"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"13a-aFWSoaZJoXvATNbYydA3GUZbTWc\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 21 May 2022 16:22:18 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"data\": {\n        \"message\": \"دریافت بیلبورد با موفقیت انجام شد\",\n        \"result\": {\n            \"_id\": \"61eabe685765e0e8ba58de21\",\n            \"avatarUrl\": \"http://37.152.181.240/uploads/billboards/a157b6a5-1c86-4d40-997c-d949a94cfd92.png\",\n            \"redirectUrl\": \"https://hive1400.ir\",\n            \"dateTime\": \"1400/11/01 - 14:08:40\"\n        }\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "messages",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{local}}/api/general/messages?agentId=62c00501-8b0d-472e-a3e4-2d42a5fe0cee",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"api",
+								"general",
+								"messages"
+							],
+							"query": [
+								{
+									"key": "agentId",
+									"value": "62c00501-8b0d-472e-a3e4-2d42a5fe0cee"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{local}}/api/general/messages?agentId=62c00501-8b0d-472e-a3e4-2d42a5fe0cee",
+									"host": [
+										"{{local}}"
+									],
+									"path": [
+										"api",
+										"general",
+										"messages"
+									],
+									"query": [
+										{
+											"key": "agentId",
+											"value": "62c00501-8b0d-472e-a3e4-2d42a5fe0cee"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "372"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"174-segg4dhV+WUihJPh+1++jC6Je6Y\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 21 May 2022 16:22:54 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"data\": {\n        \"message\": \"پیام های کارگزار با موفقیت دریافت شد\",\n        \"result\": [\n            {\n                \"id\": \"136c0280-eba6-4778-82dc-5b0f341df43b\",\n                \"date\": \"1401/01/02\",\n                \"time\": \"17:18:04\",\n                \"agentId\": \"62c00501-8b0d-472e-a3e4-2d42a5fe0cee\",\n                \"title\": \"توجه\",\n                \"description\": \"کارگذار گرامی لطفا کیف پول خود را بررسی نمایید\"\n            }\n        ]\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "message",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{local}}/api/general/message?id=136c0280-eba6-4778-82dc-5b0f341df43b",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"api",
+								"general",
+								"message"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "136c0280-eba6-4778-82dc-5b0f341df43b"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{local}}/api/general/message?id=136c0280-eba6-4778-82dc-5b0f341df43b",
+									"host": [
+										"{{local}}"
+									],
+									"path": [
+										"api",
+										"general",
+										"message"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "136c0280-eba6-4778-82dc-5b0f341df43b"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "363"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"16b-Ib+UaVAeW/DN//eeylg+oIe63NI\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 21 May 2022 16:31:47 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"data\": {\n        \"message\": \"پیام کارگزار با موفقیت دریافت شد\",\n        \"result\": {\n            \"id\": \"136c0280-eba6-4778-82dc-5b0f341df43b\",\n            \"date\": \"1401/01/02\",\n            \"time\": \"17:18:04\",\n            \"agentId\": \"62c00501-8b0d-472e-a3e4-2d42a5fe0cee\",\n            \"title\": \"توجه\",\n            \"description\": \"کارگذار گرامی لطفا کیف پول خود را بررسی نمایید\"\n        }\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "cancellationQuestions",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{local}}/api/general/cancellationQuestions?type=user",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"api",
+								"general",
+								"cancellationQuestions"
+							],
+							"query": [
+								{
+									"key": "type",
+									"value": "user"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "successAgent",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{local}}/api/general/cancellationQuestions?type=agent",
+									"host": [
+										"{{local}}"
+									],
+									"path": [
+										"api",
+										"general",
+										"cancellationQuestions"
+									],
+									"query": [
+										{
+											"key": "type",
+											"value": "agent"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "511"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1ff-ilrTXG0GUoaQ5r6lF2k4FPHqZkQ\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 21 May 2022 16:32:16 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"message\": \"دریافت سوالات لغو سرویس با موفقیت انجام شد\",\n        \"result\": [\n            {\n                \"question\": \"دیگه حالت چطوره ؟\",\n                \"id\": \"b6a9cc33-4f06-46f4-9935-f3411dc0bc2d\",\n                \"answer\": null\n            },\n            {\n                \"question\": \"خب چرا میخوای سرویس رو لغو کنی مگه از پول بدت میاد ؟\",\n                \"id\": \"4da7165d-d6da-4c94-926b-1c2cc61d0ec6\",\n                \"answer\": null\n            },\n            {\n                \"question\": \"حالا لغو میکنی لغو ولی خب چرا ؟\",\n                \"id\": \"70f73c4d-bbec-4aac-93b4-1e02883c3648\",\n                \"answer\": null\n            }\n        ]\n    }\n}"
+						},
+						{
+							"name": "successUser",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{local}}/api/general/cancellationQuestions?type=user",
+									"host": [
+										"{{local}}"
+									],
+									"path": [
+										"api",
+										"general",
+										"cancellationQuestions"
+									],
+									"query": [
+										{
+											"key": "type",
+											"value": "user"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "283"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"11b-ESD2CAyS1FSas1XyqMtdLUD5URg\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 21 May 2022 16:32:45 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"message\": \"دریافت سوالات لغو سرویس با موفقیت انجام شد\",\n        \"result\": [\n            {\n                \"question\": \"س\",\n                \"id\": \"47c53667-1314-4533-92ff-18f0425f964e\",\n                \"answer\": null\n            },\n            {\n                \"question\": \"سلام خوبین ؟\",\n                \"id\": \"caff4608-fa90-4312-aa5a-023bd3993d41\",\n                \"answer\": null\n            }\n        ]\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "surveyQuestions",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{local}}/api/general/surveyQuestions?type=user",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"api",
+								"general",
+								"surveyQuestions"
+							],
+							"query": [
+								{
+									"key": "type",
+									"value": "user"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "successAgent",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{local}}/api/general/surveyQuestions?type=agent",
+									"host": [
+										"{{local}}"
+									],
+									"path": [
+										"api",
+										"general",
+										"surveyQuestions"
+									],
+									"query": [
+										{
+											"key": "type",
+											"value": "agent"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "459"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1cb-q4OEvEPio4V03C8C4ycdX5fvox8\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 21 May 2022 16:32:30 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"message\": \"دریافت سوالات نظرسنجی با موفقیت انجام شد\",\n        \"result\": [\n            {\n                \"question\": \"از قیمت خدمت راضی بودین ؟\",\n                \"id\": \"c2bc344f-9062-4144-a879-ff90e1312858\",\n                \"answer\": null\n            },\n            {\n                \"question\": \"از خدمت راضی بودی  ؟\",\n                \"id\": \"29ac7a02-72c3-42bd-9a6c-099691c52964\",\n                \"answer\": null\n            },\n            {\n                \"question\": \"از رفتار مشتری راضی بودین ؟\",\n                \"id\": \"9276c112-61f3-4c53-b3a8-8912f162559f\",\n                \"answer\": null\n            }\n        ]\n    }\n}"
+						},
+						{
+							"name": "successUser",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{local}}/api/general/surveyQuestions?type=user",
+									"host": [
+										"{{local}}"
+									],
+									"path": [
+										"api",
+										"general",
+										"surveyQuestions"
+									],
+									"query": [
+										{
+											"key": "type",
+											"value": "user"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "300"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"12c-9/fIuOYsnMpzDbvNg8EHS3GTegY\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 21 May 2022 16:33:32 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"message\": \"دریافت سوالات نظرسنجی با موفقیت انجام شد\",\n        \"result\": [\n            {\n                \"question\": \"راضی بودین ؟\",\n                \"id\": \"50e5cc58-563e-4fdc-829e-79379b32ecfe\",\n                \"answer\": null\n            },\n            {\n                \"question\": \"سلام خوبین ؟\",\n                \"id\": \"e828c4de-f6ae-4c9b-b291-ca139121591e\",\n                \"answer\": null\n            }\n        ]\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "visit",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{local}}/api/general/visit?type=user",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"api",
+								"general",
+								"visit"
+							],
+							"query": [
+								{
+									"key": "type",
+									"value": "user"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "successAgent",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{local}}/api/general/visit?type=agent",
+									"host": [
+										"{{local}}"
+									],
+									"path": [
+										"api",
+										"general",
+										"visit"
+									],
+									"query": [
+										{
+											"key": "type",
+											"value": "agent"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "84"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"54-PSGGL/cj+DvW9vRp2di/DkU7lmg\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 21 May 2022 16:39:37 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"data\": {\n        \"message\": \"بازدید با موفقیت ثبت شد\"\n    }\n}"
+						},
+						{
+							"name": "successUser",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{local}}/api/general/visit?type=user",
+									"host": [
+										"{{local}}"
+									],
+									"path": [
+										"api",
+										"general",
+										"visit"
+									],
+									"query": [
+										{
+											"key": "type",
+											"value": "user"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "84"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"54-PSGGL/cj+DvW9vRp2di/DkU7lmg\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 21 May 2022 16:47:38 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"data\": {\n        \"message\": \"بازدید با موفقیت ثبت شد\"\n    }\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "dashboardService",
+			"item": [
+				{
+					"name": "uploadAvatar",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjdmNTcxODNiLTc2MjMtNGM4MC04MmM2LTdjMjYzZmM5ZWNjNiIsImlhdCI6MTY0NzMzOTI3OSwiZXhwIjoxNjQ3MzYwODc5fQ.vFFLtoTcL0axePNGpERYvlv5OYtLy5W6m1nG4cC9zjM",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "profile",
+									"type": "file",
+									"src": "/C:/Users/coder135/Downloads/msg-1050362518-8009.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{local}}/api/dashboard/uploadAvatar",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"api",
+								"dashboard",
+								"uploadAvatar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteAvatar",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyM2Y3ZTE0LTI3NGQtNDRlMi1iM2Q5LTQxM2RkNzI1Y2NjMyIsImlhdCI6MTY0Mjc2ODk2NywiZXhwIjoxNjQyNzkwNTY3fQ.9Ka3yon_PS37LZs4VEYiu1rbx7SJ5t2q08BlL1idmtU",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{local}}/api/dashboard/deleteAvatar",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"api",
+								"dashboard",
+								"deleteAvatar"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "survey",
+			"item": [
+				{
+					"name": "addAgentSurvey",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"serviceCode\":\"HIVE-24810ee3-3cfd-4477-bd4e-68f5cdaa6b76\",\r\n    \"rate\" : 5,\r\n    \"questions\": [\r\n        {\r\n            \"question\":\"رفتار کاربر خوب بود ؟\",\r\n            \"answer\": true\r\n        },\r\n         {\r\n            \"question\":\"رضایت داشتید  ؟\",\r\n            \"answer\": true\r\n        }\r\n    ],\r\n    \"description\": \"درکل کاربر خوبی بود\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local}}/api/survey/agent",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"api",
+								"survey",
+								"agent"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addUserSurvey",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"serviceCode\":\"HIVE-24810ee3-3cfd-4477-bd4e-68f5cdaa6b76\",\r\n    \"rate\" : 5,\r\n    \"questions\": [\r\n        {\r\n            \"question\":\"رفتار کارگذار خوب بود ؟\",\r\n            \"answer\": true\r\n        },\r\n         {\r\n            \"question\":\"رضایت داشتید  ؟\",\r\n            \"answer\": true\r\n        }\r\n    ],\r\n    \"description\": \"درکل کاگذار خوبی بود\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local}}/api/survey/user",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"api",
+								"survey",
+								"user"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "wallet",
+			"item": [
+				{
+					"name": "IBAN",
+					"item": [
+						{
+							"name": "addIBAN",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"agentId\": \"62c00501-8b0d-472e-a3e4-2d42a5fe0ce2\",\r\n    \"fullName\": \"سیدرضا حسینی\",\r\n    \"bankName\": \"ملت\",\r\n    \"IBAN\": \"IR840610000000700790111112\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{dev}}/api/wallet/IBAN",
+									"host": [
+										"{{dev}}"
+									],
+									"path": [
+										"api",
+										"wallet",
+										"IBAN"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "conflictIBAN",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"agentId\": \"6afb1bf2-9a74-4d78-832f-7d838327f374\",\r\n    \"fullName\": \"سیدرضا حسینی\",\r\n    \"bankName\": \"ملت\",\r\n    \"IBAN\": \"IR840610000000700790111111\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{dev}}/api/wallet/IBAN",
+											"host": [
+												"{{dev}}"
+											],
+											"path": [
+												"api",
+												"wallet",
+												"IBAN"
+											]
+										}
+									},
+									"status": "Conflict",
+									"code": 409,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Server",
+											"value": "nginx/1.14.2"
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 02 Jun 2022 16:09:43 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "281"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"119-HnHT4jw7/zTqoQnw50hWZSQiPIs\""
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"status\": \"fail\",\n    \"data\": {\n        \"message\": \"شماره شبا شما قبلا در سیستم ثبت شده است\",\n        \"result\": {\n            \"agentId\": \"6afb1bf2-9a74-4d78-832f-7d838327f374\",\n            \"fullName\": \"سیدرضا حسینی 2  \",\n            \"bankName\": \"ملت\",\n            \"IBAN\": \"IR840610000000700790111111\",\n            \"status\": false\n        }\n    }\n}"
+								},
+								{
+									"name": "success",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"agentId\": \"62c00501-8b0d-472e-a3e4-2d42a5fe0ce2\",\r\n    \"fullName\": \"سیدرضا حسینی\",\r\n    \"bankName\": \"ملت\",\r\n    \"IBAN\": \"IR840610000000700790111112\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{dev}}/api/wallet/IBAN",
+											"host": [
+												"{{dev}}"
+											],
+											"path": [
+												"api",
+												"wallet",
+												"IBAN"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Server",
+											"value": "nginx/1.14.2"
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 02 Jun 2022 16:11:07 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "365"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"16d-yEei2pQ3REF1XO3YpV4L4o90skE\""
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"status\": \"success\",\n    \"data\": {\n        \"message\": \"شماره شبا ثبت شد پس از تایید اپراتور هایو در سامانه ثبت می شود\",\n        \"result\": {\n            \"agentId\": \"62c00501-8b0d-472e-a3e4-2d42a5fe0ce2\",\n            \"fullName\": \"سیدرضا حسینی\",\n            \"bankName\": \"ملت\",\n            \"IBAN\": \"IR840610000000700790111112\",\n            \"id\": \"b4e159b4-9f37-406a-a32f-7c4c34113404\",\n            \"status\": false\n        }\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "getIBAN",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{dev}}/api/wallet/IBAN?agentId=6afb1bf2-9a74-4d78-832f-7d838327f374",
+									"host": [
+										"{{dev}}"
+									],
+									"path": [
+										"api",
+										"wallet",
+										"IBAN"
+									],
+									"query": [
+										{
+											"key": "agentId",
+											"value": "6afb1bf2-9a74-4d78-832f-7d838327f374"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "updateIBAN",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"agentId\": \"6afb1bf2-9a74-4d78-832f-7d838327f374\",\r\n    \"fullName\": \"سیدرضا حسینی 2  \"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{dev}}/api/wallet/IBAN",
+									"host": [
+										"{{dev}}"
+									],
+									"path": [
+										"api",
+										"wallet",
+										"IBAN"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "success",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"agentId\": \"6afb1bf2-9a74-4d78-832f-7d838327f374\",\r\n    \"fullName\": \"سیدرضا حسینی 2  \"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{dev}}/api/wallet/IBAN",
+											"host": [
+												"{{dev}}"
+											],
+											"path": [
+												"api",
+												"wallet",
+												"IBAN"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Server",
+											"value": "nginx/1.14.2"
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 02 Jun 2022 16:22:18 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "295"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"127-aJmc51VdkRi64A8VYfXIBaui6Vs\""
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"status\": \"success\",\n    \"data\": {\n        \"message\": \"ویرایش اطلاعات حساب بانکی با موفقیت انجام شد\",\n        \"result\": {\n            \"agentId\": \"6afb1bf2-9a74-4d78-832f-7d838327f374\",\n            \"fullName\": \"سیدرضا حسینی 2  \",\n            \"bankName\": \"ملت\",\n            \"IBAN\": \"IR840610000000700790111111\",\n            \"status\": false\n        }\n    }\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "getStock",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{dev}}/api/wallet/stock?id=7f57183b-7623-4c80-82c6-7c263fc9ecc6",
+							"host": [
+								"{{dev}}"
+							],
+							"path": [
+								"api",
+								"wallet",
+								"stock"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "7f57183b-7623-4c80-82c6-7c263fc9ecc6"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{dev}}/api/wallet/stock?id=7f57183b-7623-4c80-82c6-7c263fc9ecc6",
+									"host": [
+										"{{dev}}"
+									],
+									"path": [
+										"api",
+										"wallet",
+										"stock"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "7f57183b-7623-4c80-82c6-7c263fc9ecc6"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.14.2"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 02 Jun 2022 15:54:57 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "213"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"d5-9o5ww2ai2ZWs/kI5tH/oH+F7Xkc\""
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"data\": {\n        \"message\": \"دریافت موجودی با موفقیت انجام شد\",\n        \"result\": {\n            \"id\": \"7f57183b-7623-4c80-82c6-7c263fc9ecc6\",\n            \"nationalId\": \"1234567891\",\n            \"type\": \"user\",\n            \"stock\": 49960000\n        }\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "withdrawal",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{dev}}/api/wallet/withdrawal?id=62c00501-8b0d-472e-a3e4-2d42a5fe0cee",
+							"host": [
+								"{{dev}}"
+							],
+							"path": [
+								"api",
+								"wallet",
+								"withdrawal"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "62c00501-8b0d-472e-a3e4-2d42a5fe0cee"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{dev}}/api/wallet/withdrawal?id=62c00501-8b0d-472e-a3e4-2d42a5fe0cee",
+									"host": [
+										"{{dev}}"
+									],
+									"path": [
+										"api",
+										"wallet",
+										"withdrawal"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "62c00501-8b0d-472e-a3e4-2d42a5fe0cee"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.14.2"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 02 Jun 2022 15:58:17 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "415"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"19f-RUj5qFpQh2fSWj8HecBJTQWbPqA\""
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"data\": {\n        \"message\": \"درخواست برداشت وجه با موفقیت انجام شد و پس از 24 ساعت کاری به حساب شما واریز خواهد شد\",\n        \"result\": {\n            \"deposit\": 24250,\n            \"agentId\": \"62c00501-8b0d-472e-a3e4-2d42a5fe0cee\",\n            \"id\": \"b5f74774-be6b-4f3c-b90e-6a88471321f6\",\n            \"requestDate\": \"14010312\",\n            \"requestTime\": \"20:28:17\",\n            \"depositDate\": null,\n            \"depositTime\": null,\n            \"status\": false\n        }\n    }\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "service",
+			"item": [
+				{
+					"name": "getServices",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{dev}}/api/service/history?agentId=62c00501-8b0d-472e-a3e4-2d42a5fe0cee",
+							"host": [
+								"{{dev}}"
+							],
+							"path": [
+								"api",
+								"service",
+								"history"
+							],
+							"query": [
+								{
+									"key": "agentId",
+									"value": "62c00501-8b0d-472e-a3e4-2d42a5fe0cee"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "userSuccess",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{dev}}/api/service/history?userId=7f57183b-7623-4c80-82c6-7c263fc9ecc6",
+									"host": [
+										"{{dev}}"
+									],
+									"path": [
+										"api",
+										"service",
+										"history"
+									],
+									"query": [
+										{
+											"key": "userId",
+											"value": "7f57183b-7623-4c80-82c6-7c263fc9ecc6"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.14.2"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 03 Jun 2022 13:05:40 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "7322"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1c9a-h7G+lXUZBDXkqoNs2BVZWsxApDU\""
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"message\": \"دریافت سرویس ها با موفقیت انجام شد\",\n        \"result\": {\n            \"services\": [\n                {\n                    \"categoryName\": \"تدریس ریاضی\",\n                    \"serviceCode\": \"HIVE-3b929f59-c7e7-42a9-b2b4-343e61caa460\"\n                },\n                {\n                    \"categoryName\": \"تدریس ریاضی\",\n                    \"serviceCode\": \"HIVE-3b929f59-c7e7-42a9-b2b4-343e61caa460\"\n                },\n                {\n                    \"categoryName\": \"تدریس ریاضی\",\n                    \"serviceCode\": \"HIVE-3b929f59-c7e7-42a9-b2b4-343e61caa460\"\n                },\n                {\n                    \"categoryName\": \"تدریس ریاضی\",\n                    \"serviceCode\": \"HIVE-4e5ebb3d-723e-4bc5-b4ec-c6c0b43273b5\"\n                },\n                {\n                    \"categoryName\": \"تدریس ریاضی\",\n                    \"serviceCode\": \"HIVE-c595227a-d2a1-4afa-ab7c-838a63fedc1d\"\n                },\n                {\n                    \"categoryName\": \"تدریس ریاضی\",\n                    \"serviceCode\": \"HIVE-c43ae070-c254-422e-90fe-ea10acb5a61c\"\n                },\n                {\n                    \"categoryName\": \"تدریس ریاضی\",\n                    \"serviceCode\": \"HIVE-c43ae070-c254-422e-90fe-ea10acb5a61c\"\n                },\n                {\n                    \"categoryName\": \"تدریس ریاضی\",\n                    \"serviceCode\": \"HIVE-270fa258-f16d-43d2-bdd3-2fb679f5ac83\"\n                },\n                {\n                    \"categoryName\": \"تدریس ریاضی\",\n                    \"serviceCode\": \"HIVE-270fa258-f16d-43d2-bdd3-2fb679f5ac83\"\n                },\n                {\n                    \"categoryName\": \"تدریس ریاضی\",\n                    \"serviceCode\": \"HIVE-270fa258-f16d-43d2-bdd3-2fb679f5ac83\"\n                },\n                {\n                    \"categoryName\": \"تدریس ریاضی\",\n                    \"serviceCode\": \"HIVE-270fa258-f16d-43d2-bdd3-2fb679f5ac83\"\n                },\n                {\n                    \"categoryName\": \"تدریس ریاضی\",\n                    \"serviceCode\": \"HIVE-f4e87080-2424-42af-8dcf-34cfbd1aba68\"\n                },\n                {\n                    \"categoryName\": \"تدریس ریاضی\",\n                    \"serviceCode\": \"HIVE-a2100d2c-9ef9-499f-af17-0937ef151949\"\n                },\n                {\n                    \"categoryName\": \"تدریس ریاضی\",\n                    \"serviceCode\": \"HIVE-5c1fc6b8-50d9-426c-870d-2af74ce8684b\"\n                },\n                {\n                    \"categoryName\": \"تدریس ریاضی\",\n                    \"serviceCode\": \"HIVE-971a81f0-e82b-4a9f-ae60-27c5b75bc215\"\n                },\n                {\n                    \"categoryName\": \"تدریس ریاضی\",\n                    \"serviceCode\": \"HIVE-971a81f0-e82b-4a9f-ae60-27c5b75bc215\"\n                },\n                {\n                    \"categoryName\": \"تدریس ریاضی\",\n                    \"serviceCode\": \"HIVE-56f0b9f7-883e-4461-8f5d-0f2cce491eae\"\n                },\n                {\n                    \"categoryName\": \"تدریس ریاضی\",\n                    \"serviceCode\": \"HIVE-3c0d731d-5875-4faa-90af-af34289b5d6b\"\n                },\n                {\n                    \"categoryName\": \"تدریس ریاضی\",\n                    \"serviceCode\": \"HIVE-a3c80222-b3b5-4cc4-84d6-b4c4a8a696e3\"\n                },\n                {\n                    \"categoryName\": \"تدریس ریاضی\",\n                    \"serviceCode\": \"HIVE-b206bf3a-4e3a-4b19-a5cb-e67e93080280\"\n                },\n                {\n                    \"categoryName\": \"تدریس ریاضی\",\n                    \"serviceCode\": \"HIVE-b206bf3a-4e3a-4b19-a5cb-e67e93080280\"\n                },\n                {\n                    \"categoryName\": \"تدریس ریاضی\",\n                    \"serviceCode\": \"HIVE-b206bf3a-4e3a-4b19-a5cb-e67e93080280\"\n                },\n                {\n                    \"categoryName\": \"تدریس ریاضی\",\n                    \"serviceCode\": \"HIVE-b206bf3a-4e3a-4b19-a5cb-e67e93080280\"\n                },\n                {\n                    \"categoryName\": \"تدریس ریاضی\",\n                    \"serviceCode\": \"HIVE-b206bf3a-4e3a-4b19-a5cb-e67e93080280\"\n                },\n                {\n                    \"categoryName\": \"تدریس ریاضی\",\n                    \"serviceCode\": \"HIVE-b206bf3a-4e3a-4b19-a5cb-e67e93080280\"\n                },\n                {\n                    \"categoryName\": \"تدریس ریاضی\",\n                    \"serviceCode\": \"HIVE-b206bf3a-4e3a-4b19-a5cb-e67e93080280\"\n                },\n                {\n                    \"categoryName\": \"تدریس ریاضی\",\n                    \"serviceCode\": \"HIVE-b206bf3a-4e3a-4b19-a5cb-e67e93080280\"\n                },\n                {\n                    \"categoryName\": \"تدریس ریاضی\",\n                    \"serviceCode\": \"HIVE-b206bf3a-4e3a-4b19-a5cb-e67e93080280\"\n                },\n                {\n                    \"categoryName\": \"تدریس ریاضی\",\n                    \"serviceCode\": \"HIVE-b206bf3a-4e3a-4b19-a5cb-e67e93080280\"\n                },\n                {\n                    \"categoryName\": \"تدریس ریاضی\",\n                    \"serviceCode\": \"HIVE-b206bf3a-4e3a-4b19-a5cb-e67e93080280\"\n                },\n                {\n                    \"categoryName\": \"تدریس ریاضی\",\n                    \"serviceCode\": \"HIVE-b206bf3a-4e3a-4b19-a5cb-e67e93080280\"\n                },\n                {\n                    \"categoryName\": \"تدریس ریاضی\",\n                    \"serviceCode\": \"HIVE-b206bf3a-4e3a-4b19-a5cb-e67e93080280\"\n                },\n                {\n                    \"categoryName\": \"تدریس ریاضی\",\n                    \"serviceCode\": \"HIVE-b206bf3a-4e3a-4b19-a5cb-e67e93080280\"\n                },\n                {\n                    \"categoryName\": \"تدریس ریاضی\",\n                    \"serviceCode\": \"HIVE-b206bf3a-4e3a-4b19-a5cb-e67e93080280\"\n                },\n                {\n                    \"categoryName\": \"تدریس ریاضی\",\n                    \"serviceCode\": \"HIVE-b206bf3a-4e3a-4b19-a5cb-e67e93080280\"\n                },\n                {\n                    \"categoryName\": \"تدریس ریاضی\",\n                    \"serviceCode\": \"HIVE-b206bf3a-4e3a-4b19-a5cb-e67e93080280\"\n                },\n                {\n                    \"categoryName\": \"تدریس ریاضی\",\n                    \"serviceCode\": \"HIVE-b206bf3a-4e3a-4b19-a5cb-e67e93080280\"\n                },\n                {\n                    \"categoryName\": \"تدریس ریاضی\",\n                    \"serviceCode\": \"HIVE-b206bf3a-4e3a-4b19-a5cb-e67e93080280\"\n                },\n                {\n                    \"categoryName\": \"تدریس ریاضی\",\n                    \"serviceCode\": \"HIVE-b206bf3a-4e3a-4b19-a5cb-e67e93080280\"\n                },\n                {\n                    \"categoryName\": \"تدریس ریاضی\",\n                    \"serviceCode\": \"HIVE-b206bf3a-4e3a-4b19-a5cb-e67e93080280\"\n                },\n                {\n                    \"categoryName\": \"تدریس ریاضی\",\n                    \"serviceCode\": \"HIVE-b206bf3a-4e3a-4b19-a5cb-e67e93080280\"\n                },\n                {\n                    \"categoryName\": \"تدریس ریاضی\",\n                    \"serviceCode\": \"HIVE-b206bf3a-4e3a-4b19-a5cb-e67e93080280\"\n                },\n                {\n                    \"categoryName\": \"تدریس ریاضی\",\n                    \"serviceCode\": \"HIVE-b206bf3a-4e3a-4b19-a5cb-e67e93080280\"\n                },\n                {\n                    \"categoryName\": \"تدریس ریاضی\",\n                    \"serviceCode\": \"HIVE-b206bf3a-4e3a-4b19-a5cb-e67e93080280\"\n                },\n                {\n                    \"categoryName\": \"تدریس ریاضی\",\n                    \"serviceCode\": \"HIVE-24810ee3-3cfd-4477-bd4e-68f5cdaa6b76\"\n                },\n                {\n                    \"categoryName\": \"معماری کامپیوتر\",\n                    \"serviceCode\": \"HIVE-0725d238-5ef3-484a-9b04-ec986e934c0e\"\n                },\n                {\n                    \"categoryName\": \"تدریس ریاضی\",\n                    \"serviceCode\": \"HIVE-b28ccd89-6460-44e2-bfad-62197faf8d89\"\n                },\n                {\n                    \"categoryName\": \"تدریس ریاضی\",\n                    \"serviceCode\": \"HIVE-07e9e312-4a4c-4e1b-bae6-e2a3de212835\"\n                },\n                {\n                    \"categoryName\": \"تدریس ریاضی\",\n                    \"serviceCode\": \"HIVE-ea1d4dc0-59e4-4ff7-bb59-2aa9e7dc6e66\"\n                },\n                {\n                    \"categoryName\": \"تدریس ریاضی\",\n                    \"serviceCode\": \"HIVE-63f4a5ee-f52c-45e2-a266-bcae08f2474c\"\n                },\n                {\n                    \"categoryName\": \"تدریس ریاضی\",\n                    \"serviceCode\": \"HIVE-63f4a5ee-f52c-45e2-a266-bcae08f2474c\"\n                },\n                {\n                    \"categoryName\": \"تدریس ریاضی\",\n                    \"serviceCode\": \"HIVE-5aaae43d-85fa-4c7f-9ea9-8bdb526fd148\"\n                },\n                {\n                    \"categoryName\": \"تدریس ریاضی\",\n                    \"serviceCode\": \"HIVE-5aaae43d-85fa-4c7f-9ea9-8bdb526fd148\"\n                },\n                {\n                    \"categoryName\": \"تدریس ریاضی\",\n                    \"serviceCode\": \"HIVE-2b0ccacd-be53-4839-8f6e-be52866aaa2b\"\n                },\n                {\n                    \"categoryName\": \"تدریس ریاضی\",\n                    \"serviceCode\": \"HIVE-ac40cde4-fc96-49f4-a26d-99101d34d3de\"\n                },\n                {\n                    \"categoryName\": \"تدریس ریاضی\",\n                    \"serviceCode\": \"HIVE-2db8ed75-8842-4761-884b-7474eec1bb90\"\n                },\n                {\n                    \"categoryName\": \"تدریس ریاضی\",\n                    \"serviceCode\": \"HIVE-f325a103-1876-410a-a360-b912c4c75e75\"\n                },\n                {\n                    \"categoryName\": \"تدریس ریاضی\",\n                    \"serviceCode\": \"HIVE-88f5a8e9-e1dd-41bf-8f4b-62f621b785ba\"\n                },\n                {\n                    \"categoryName\": \"تدریس ریاضی\",\n                    \"serviceCode\": \"HIVE-88f5a8e9-e1dd-41bf-8f4b-62f621b785ba\"\n                },\n                {\n                    \"categoryName\": \"تدریس ریاضی\",\n                    \"serviceCode\": \"HIVE-42a812cc-22c2-4bda-b041-454f610d0e45\"\n                },\n                {\n                    \"categoryName\": \"تدریس ریاضی\",\n                    \"serviceCode\": \"HIVE-42a812cc-22c2-4bda-b041-454f610d0e45\"\n                },\n                {\n                    \"categoryName\": \"تدریس ریاضی\",\n                    \"serviceCode\": \"HIVE-42a812cc-22c2-4bda-b041-454f610d0e45\"\n                },\n                {\n                    \"categoryName\": \"آرایشگاه\",\n                    \"serviceCode\": \"HIVE-b648a18b-aee0-45c7-a523-5d03a58752f5\"\n                },\n                {\n                    \"categoryName\": \"آرایشگاه\",\n                    \"serviceCode\": \"HIVE-482cf35b-b7d8-4cde-9f48-377771812bbc\"\n                },\n                {\n                    \"categoryName\": \"آرایشگاه\",\n                    \"serviceCode\": \"HIVE-1f0100cc-edb2-43fc-bf4b-85e02d1b1852\"\n                },\n                {\n                    \"categoryName\": \"تدریس ریاضی\",\n                    \"serviceCode\": \"HIVE-5aab2fb1-3f54-40ac-96d4-c7bd994cf6ba\"\n                },\n                {\n                    \"categoryName\": \"برق ماشین\",\n                    \"serviceCode\": \"HIVE-31ce4710-6cff-4c03-ab70-33cefbf6a49e\"\n                },\n                {\n                    \"categoryName\": \"نظافت منزل\",\n                    \"serviceCode\": \"HIVE-b1808706-1bf0-4452-99e1-42242c8368f4\"\n                },\n                {\n                    \"categoryName\": \"نظافت منزل\",\n                    \"serviceCode\": \"HIVE-f8e79cc1-494d-45ec-83bf-8e72f6042376\"\n                },\n                {\n                    \"categoryName\": \"نظافت منزل\",\n                    \"serviceCode\": \"HIVE-ee16fadf-61e1-4b5a-aa14-98abe6069193\"\n                },\n                {\n                    \"categoryName\": \"برق ماشین\",\n                    \"serviceCode\": \"HIVE-d7ab9864-96a5-4cbb-b8c6-dc48053ebfac\"\n                },\n                {\n                    \"categoryName\": \"نظافت منزل\",\n                    \"serviceCode\": \"HIVE-ce9e267b-5cf2-40cc-8666-a74d78388c65\"\n                },\n                {\n                    \"categoryName\": \"نظافت منزل\",\n                    \"serviceCode\": \"HIVE-1be33530-2181-4d90-a5df-8892b116d553\"\n                }\n            ],\n            \"count\": 73\n        }\n    }\n}"
+						},
+						{
+							"name": "agentSuccess",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{dev}}/api/service/history?agentId=62c00501-8b0d-472e-a3e4-2d42a5fe0cee",
+									"host": [
+										"{{dev}}"
+									],
+									"path": [
+										"api",
+										"service",
+										"history"
+									],
+									"query": [
+										{
+											"key": "agentId",
+											"value": "62c00501-8b0d-472e-a3e4-2d42a5fe0cee"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.14.2"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 03 Jun 2022 13:06:54 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "5370"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"14fa-NcaWK7b4Yq+kxswRCw3GR0BZ5nc\""
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"message\": \"دریافت سرویس ها با موفقیت انجام شد\",\n        \"result\": {\n            \"services\": [\n                {\n                    \"categoryName\": \"آرایشگاه\",\n                    \"serviceCode\": \"HIVE-bb55206d-0777-4870-bf5b-245e08106b81\"\n                },\n                {\n                    \"categoryName\": \"آرایشگاه\",\n                    \"serviceCode\": \"HIVE-bb55206d-0777-4870-bf5b-245e08106b81\"\n                },\n                {\n                    \"categoryName\": \"آرایشگاه\",\n                    \"serviceCode\": \"HIVE-bb55206d-0777-4870-bf5b-245e08106b81\"\n                },\n                {\n                    \"categoryName\": \"تدریس ریاضی\",\n                    \"serviceCode\": \"HIVE-5c1fc6b8-50d9-426c-870d-2af74ce8684b\"\n                },\n                {\n                    \"categoryName\": \"تدریس ریاضی\",\n                    \"serviceCode\": \"HIVE-b206bf3a-4e3a-4b19-a5cb-e67e93080280\"\n                },\n                {\n                    \"categoryName\": \"تدریس ریاضی\",\n                    \"serviceCode\": \"HIVE-b206bf3a-4e3a-4b19-a5cb-e67e93080280\"\n                },\n                {\n                    \"categoryName\": \"تدریس ریاضی\",\n                    \"serviceCode\": \"HIVE-b206bf3a-4e3a-4b19-a5cb-e67e93080280\"\n                },\n                {\n                    \"categoryName\": \"تدریس ریاضی\",\n                    \"serviceCode\": \"HIVE-b206bf3a-4e3a-4b19-a5cb-e67e93080280\"\n                },\n                {\n                    \"categoryName\": \"تدریس ریاضی\",\n                    \"serviceCode\": \"HIVE-b206bf3a-4e3a-4b19-a5cb-e67e93080280\"\n                },\n                {\n                    \"categoryName\": \"تدریس ریاضی\",\n                    \"serviceCode\": \"HIVE-b206bf3a-4e3a-4b19-a5cb-e67e93080280\"\n                },\n                {\n                    \"categoryName\": \"تدریس ریاضی\",\n                    \"serviceCode\": \"HIVE-b206bf3a-4e3a-4b19-a5cb-e67e93080280\"\n                },\n                {\n                    \"categoryName\": \"تدریس ریاضی\",\n                    \"serviceCode\": \"HIVE-b206bf3a-4e3a-4b19-a5cb-e67e93080280\"\n                },\n                {\n                    \"categoryName\": \"تدریس ریاضی\",\n                    \"serviceCode\": \"HIVE-b206bf3a-4e3a-4b19-a5cb-e67e93080280\"\n                },\n                {\n                    \"categoryName\": \"تدریس ریاضی\",\n                    \"serviceCode\": \"HIVE-b206bf3a-4e3a-4b19-a5cb-e67e93080280\"\n                },\n                {\n                    \"categoryName\": \"تدریس ریاضی\",\n                    \"serviceCode\": \"HIVE-b206bf3a-4e3a-4b19-a5cb-e67e93080280\"\n                },\n                {\n                    \"categoryName\": \"تدریس ریاضی\",\n                    \"serviceCode\": \"HIVE-b206bf3a-4e3a-4b19-a5cb-e67e93080280\"\n                },\n                {\n                    \"categoryName\": \"تدریس ریاضی\",\n                    \"serviceCode\": \"HIVE-b206bf3a-4e3a-4b19-a5cb-e67e93080280\"\n                },\n                {\n                    \"categoryName\": \"تدریس ریاضی\",\n                    \"serviceCode\": \"HIVE-b206bf3a-4e3a-4b19-a5cb-e67e93080280\"\n                },\n                {\n                    \"categoryName\": \"تدریس ریاضی\",\n                    \"serviceCode\": \"HIVE-b206bf3a-4e3a-4b19-a5cb-e67e93080280\"\n                },\n                {\n                    \"categoryName\": \"تدریس ریاضی\",\n                    \"serviceCode\": \"HIVE-b206bf3a-4e3a-4b19-a5cb-e67e93080280\"\n                },\n                {\n                    \"categoryName\": \"تدریس ریاضی\",\n                    \"serviceCode\": \"HIVE-b206bf3a-4e3a-4b19-a5cb-e67e93080280\"\n                },\n                {\n                    \"categoryName\": \"تدریس ریاضی\",\n                    \"serviceCode\": \"HIVE-b206bf3a-4e3a-4b19-a5cb-e67e93080280\"\n                },\n                {\n                    \"categoryName\": \"تدریس ریاضی\",\n                    \"serviceCode\": \"HIVE-b206bf3a-4e3a-4b19-a5cb-e67e93080280\"\n                },\n                {\n                    \"categoryName\": \"تدریس ریاضی\",\n                    \"serviceCode\": \"HIVE-b206bf3a-4e3a-4b19-a5cb-e67e93080280\"\n                },\n                {\n                    \"categoryName\": \"تدریس ریاضی\",\n                    \"serviceCode\": \"HIVE-b206bf3a-4e3a-4b19-a5cb-e67e93080280\"\n                },\n                {\n                    \"categoryName\": \"تدریس ریاضی\",\n                    \"serviceCode\": \"HIVE-b206bf3a-4e3a-4b19-a5cb-e67e93080280\"\n                },\n                {\n                    \"categoryName\": \"تدریس ریاضی\",\n                    \"serviceCode\": \"HIVE-b206bf3a-4e3a-4b19-a5cb-e67e93080280\"\n                },\n                {\n                    \"categoryName\": \"تدریس ریاضی\",\n                    \"serviceCode\": \"HIVE-b206bf3a-4e3a-4b19-a5cb-e67e93080280\"\n                },\n                {\n                    \"categoryName\": \"تدریس ریاضی\",\n                    \"serviceCode\": \"HIVE-b206bf3a-4e3a-4b19-a5cb-e67e93080280\"\n                },\n                {\n                    \"categoryName\": \"تدریس ریاضی\",\n                    \"serviceCode\": \"HIVE-24810ee3-3cfd-4477-bd4e-68f5cdaa6b76\"\n                },\n                {\n                    \"categoryName\": \"معماری کامپیوتر\",\n                    \"serviceCode\": \"HIVE-0725d238-5ef3-484a-9b04-ec986e934c0e\"\n                },\n                {},\n                {\n                    \"categoryName\": \"معماری کامپیوتر\",\n                    \"serviceCode\": \"HIVE-001a901f-79aa-4724-b017-c53a524d3c77\"\n                },\n                {\n                    \"categoryName\": \"تدریس برنامه نویسی\",\n                    \"serviceCode\": \"HIVE-72c333aa-4d60-4804-9d43-3ab6c7da1ab6\"\n                },\n                {\n                    \"categoryName\": \"تدریس برنامه نویسی\",\n                    \"serviceCode\": \"HIVE-ef7466b8-0830-403a-8c5b-cb38981f080b\"\n                },\n                {\n                    \"categoryName\": \"تدریس ریاضی\",\n                    \"serviceCode\": \"HIVE-ea1d4dc0-59e4-4ff7-bb59-2aa9e7dc6e66\"\n                },\n                {\n                    \"categoryName\": \"تدریس ریاضی\",\n                    \"serviceCode\": \"HIVE-63f4a5ee-f52c-45e2-a266-bcae08f2474c\"\n                },\n                {\n                    \"categoryName\": \"تدریس ریاضی\",\n                    \"serviceCode\": \"HIVE-63f4a5ee-f52c-45e2-a266-bcae08f2474c\"\n                },\n                {\n                    \"categoryName\": \"تدریس ریاضی\",\n                    \"serviceCode\": \"HIVE-5aaae43d-85fa-4c7f-9ea9-8bdb526fd148\"\n                },\n                {\n                    \"categoryName\": \"تدریس ریاضی\",\n                    \"serviceCode\": \"HIVE-5aaae43d-85fa-4c7f-9ea9-8bdb526fd148\"\n                },\n                {\n                    \"categoryName\": \"تدریس ریاضی\",\n                    \"serviceCode\": \"HIVE-2b0ccacd-be53-4839-8f6e-be52866aaa2b\"\n                },\n                {\n                    \"categoryName\": \"تدریس ریاضی\",\n                    \"serviceCode\": \"HIVE-ac40cde4-fc96-49f4-a26d-99101d34d3de\"\n                },\n                {\n                    \"categoryName\": \"تدریس ریاضی\",\n                    \"serviceCode\": \"HIVE-2db8ed75-8842-4761-884b-7474eec1bb90\"\n                },\n                {\n                    \"categoryName\": \"تدریس ریاضی\",\n                    \"serviceCode\": \"HIVE-f325a103-1876-410a-a360-b912c4c75e75\"\n                },\n                {\n                    \"categoryName\": \"آرایشگاه\",\n                    \"serviceCode\": \"HIVE-b648a18b-aee0-45c7-a523-5d03a58752f5\"\n                },\n                {\n                    \"categoryName\": \"آرایشگاه\",\n                    \"serviceCode\": \"HIVE-482cf35b-b7d8-4cde-9f48-377771812bbc\"\n                },\n                {\n                    \"categoryName\": \"آرایشگاه\",\n                    \"serviceCode\": \"HIVE-1f0100cc-edb2-43fc-bf4b-85e02d1b1852\"\n                },\n                {\n                    \"categoryName\": \"تدریس ریاضی\",\n                    \"serviceCode\": \"HIVE-5aab2fb1-3f54-40ac-96d4-c7bd994cf6ba\"\n                },\n                {\n                    \"categoryName\": \"تدریس ریاضی\",\n                    \"serviceCode\": \"HIVE-e62486c2-2b71-4d5b-a0b3-0b3101775bb9\"\n                },\n                {\n                    \"categoryName\": \"نظافت منزل\",\n                    \"serviceCode\": \"HIVE-b1808706-1bf0-4452-99e1-42242c8368f4\"\n                },\n                {\n                    \"categoryName\": \"نظافت منزل\",\n                    \"serviceCode\": \"HIVE-ee16fadf-61e1-4b5a-aa14-98abe6069193\"\n                },\n                {\n                    \"categoryName\": \"برق ماشین\",\n                    \"serviceCode\": \"HIVE-d7ab9864-96a5-4cbb-b8c6-dc48053ebfac\"\n                },\n                {\n                    \"categoryName\": \"نظافت منزل\",\n                    \"serviceCode\": \"HIVE-ce9e267b-5cf2-40cc-8666-a74d78388c65\"\n                },\n                {\n                    \"categoryName\": \"نظافت منزل\",\n                    \"serviceCode\": \"HIVE-1be33530-2181-4d90-a5df-8892b116d553\"\n                }\n            ],\n            \"count\": 54\n        }\n    }\n}"
+						},
+						{
+							"name": "fail",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{dev}}/api/service/history",
+									"host": [
+										"{{dev}}"
+									],
+									"path": [
+										"api",
+										"service",
+										"history"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.14.2"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 03 Jun 2022 13:09:09 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "107"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"6b-8CjcG/9Ch+y4o41pilHWHfvGvTM\""
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"fail\",\n    \"data\": {\n        \"message\": \"شناسه کارگذار یا کاربر ارسال نشده است\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "getReservedServices",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{dev}}/api/service/reservedServices?agentId=6eddba7f-0b9e-4106-a0d9-40be545cd7b1",
+							"host": [
+								"{{dev}}"
+							],
+							"path": [
+								"api",
+								"service",
+								"reservedServices"
+							],
+							"query": [
+								{
+									"key": "agentId",
+									"value": "6eddba7f-0b9e-4106-a0d9-40be545cd7b1"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{dev}}/api/service/reservedServices?agentId=6eddba7f-0b9e-4106-a0d9-40be545cd7b1",
+									"host": [
+										"{{dev}}"
+									],
+									"path": [
+										"api",
+										"service",
+										"reservedServices"
+									],
+									"query": [
+										{
+											"key": "agentId",
+											"value": "6eddba7f-0b9e-4106-a0d9-40be545cd7b1"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.14.2"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 03 Jun 2022 13:16:20 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "3544"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"dd8-XWCJh95vYRZXWEbfIAr9Hj5RIm4\""
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"message\": \"دریافت سرویس های رزروی با موفقیت انجام شد\",\n        \"result\": {\n            \"services\": [\n                {\n                    \"origin\": {\n                        \"lat\": 29.628512,\n                        \"lng\": 52.4986755\n                    },\n                    \"cost\": 240000,\n                    \"distance\": 3000,\n                    \"categoryId\": \"4df8bbcf-2ab1-4bd4-aaf8-475f2668f22e\",\n                    \"categoryName\": \"تدریس ریاضی\",\n                    \"description\": null,\n                    \"userSocketId\": \"b7xCXbRfnS68qjHRAAAL\",\n                    \"serviceCode\": \"HIVE-42a812cc-22c2-4bda-b041-454f610d0e45\",\n                    \"serviceType\": \"reservation\",\n                    \"serviceDate\": \"1400/12/22\",\n                    \"address\": \"مشهد، خیابان شفیغی، شفیغی 27\",\n                    \"paymentType\": \"credit\",\n                    \"paymentStatus\": false,\n                    \"state\": 1,\n                    \"status\": false,\n                    \"userId\": \"7f57183b-7623-4c80-82c6-7c263fc9ecc6\",\n                    \"userFullName\": \"رضا حسینی\",\n                    \"userNumber\": \"09353133959\",\n                    \"reservationDateTime\": \"1400/12/26-15:30\",\n                    \"agentId\": \"6eddba7f-0b9e-4106-a0d9-40be545cd7b1\",\n                    \"agentSocketId\": \"4f1zZ3BBki48Bii4AAAJ\",\n                    \"agentNumber\": \"09365521378\",\n                    \"agentAvatarUrl\": \"https://hive1400.ir/uploads/avatars/4ed4e652-56c7-42b0-a57f-3d8a4eaf7e5f.jpg\"\n                },\n                {\n                    \"origin\": {\n                        \"lat\": 29.628512,\n                        \"lng\": 52.4986755\n                    },\n                    \"cost\": 240000,\n                    \"distance\": 3000,\n                    \"categoryId\": \"4df8bbcf-2ab1-4bd4-aaf8-475f2668f22e\",\n                    \"categoryName\": \"تدریس ریاضی\",\n                    \"description\": null,\n                    \"userSocketId\": \"b7xCXbRfnS68qjHRAAAL\",\n                    \"serviceCode\": \"HIVE-42a812cc-22c2-4bda-b041-454f610d0e45\",\n                    \"serviceType\": \"reservation\",\n                    \"serviceDate\": \"1400/12/23\",\n                    \"address\": \"مشهد، خیابان شفیغی، شفیغی 27\",\n                    \"paymentType\": \"credit\",\n                    \"paymentStatus\": false,\n                    \"state\": 1,\n                    \"status\": false,\n                    \"userId\": \"7f57183b-7623-4c80-82c6-7c263fc9ecc6\",\n                    \"userFullName\": \"رضا حسینی\",\n                    \"userNumber\": \"09353133959\",\n                    \"reservationDateTime\": \"1400/12/25-17:30\",\n                    \"agentId\": \"6eddba7f-0b9e-4106-a0d9-40be545cd7b1\",\n                    \"agentSocketId\": \"4f1zZ3BBki48Bii4AAAJ\",\n                    \"agentNumber\": \"09365521378\",\n                    \"agentAvatarUrl\": \"https://hive1400.ir/uploads/avatars/4ed4e652-56c7-42b0-a57f-3d8a4eaf7e5f.jpg\"\n                },\n                {\n                    \"origin\": {\n                        \"lat\": 29.628512,\n                        \"lng\": 52.4986755\n                    },\n                    \"cost\": 240000,\n                    \"distance\": 3000,\n                    \"categoryId\": \"4df8bbcf-2ab1-4bd4-aaf8-475f2668f22e\",\n                    \"categoryName\": \"تدریس ریاضی\",\n                    \"description\": null,\n                    \"userSocketId\": \"b7xCXbRfnS68qjHRAAAL\",\n                    \"serviceCode\": \"HIVE-42a812cc-22c2-4bda-b041-454f610d0e45\",\n                    \"serviceType\": \"reservation\",\n                    \"serviceDate\": \"1400/12/23\",\n                    \"address\": \"مشهد، خیابان شفیغی، شفیغی 27\",\n                    \"paymentType\": \"credit\",\n                    \"paymentStatus\": false,\n                    \"state\": 1,\n                    \"status\": false,\n                    \"userId\": \"7f57183b-7623-4c80-82c6-7c263fc9ecc6\",\n                    \"userFullName\": \"رضا حسینی\",\n                    \"userNumber\": \"09353133959\",\n                    \"reservationDateTime\": \"1400/12/29-13:00\",\n                    \"agentId\": \"6eddba7f-0b9e-4106-a0d9-40be545cd7b1\",\n                    \"agentSocketId\": \"4f1zZ3BBki48Bii4AAAJ\",\n                    \"agentNumber\": \"09365521378\",\n                    \"agentAvatarUrl\": \"https://hive1400.ir/uploads/avatars/4ed4e652-56c7-42b0-a57f-3d8a4eaf7e5f.jpg\"\n                },\n                {\n                    \"origin\": {\n                        \"lat\": 36.284846,\n                        \"lng\": 59.596672\n                    },\n                    \"cost\": 200000,\n                    \"distance\": 3000,\n                    \"categoryId\": \"71c97970-ffbd-4fb4-b1d1-a4a9774d8008\",\n                    \"categoryName\": \"برق ماشین\",\n                    \"description\": null,\n                    \"userSocketId\": \"4J8YI4plkorSxM4DAAAB\",\n                    \"serviceCode\": \"HIVE-31ce4710-6cff-4c03-ab70-33cefbf6a49e\",\n                    \"serviceType\": \"reservation\",\n                    \"serviceDate\": \"1401/01/16\",\n                    \"address\": \"مشهد، خیابان شفیغی، شفیغی 27\",\n                    \"state\": 1,\n                    \"paymentType\": \"credit\",\n                    \"status\": false,\n                    \"VipStatus\": true,\n                    \"userId\": \"7f57183b-7623-4c80-82c6-7c263fc9ecc6\",\n                    \"userFullName\": \"رضا حسینی\",\n                    \"userNumber\": \"09353133959\",\n                    \"reservationDate\": \"1401/01/18\",\n                    \"reservationTime\": \"15:30\",\n                    \"reservationDateTime\": \"1401/01/18-15:30\",\n                    \"agentId\": \"6eddba7f-0b9e-4106-a0d9-40be545cd7b1\",\n                    \"agentFullName\": \"امیر حسین فرهادی\",\n                    \"agentNumber\": \"09365521378\",\n                    \"agentAvatarUrl\": \"https://hive1400.ir/uploads/avatars/4ed4e652-56c7-42b0-a57f-3d8a4eaf7e5f.jpg\",\n                    \"operatorStatus\": false\n                }\n            ],\n            \"count\": 4\n        }\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "getVipServicesServices",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{dev}}/api/service/vipServices?agentId=62c00501-8b0d-472e-a3e4-2d42a5fe0cee",
+							"host": [
+								"{{dev}}"
+							],
+							"path": [
+								"api",
+								"service",
+								"vipServices"
+							],
+							"query": [
+								{
+									"key": "agentId",
+									"value": "62c00501-8b0d-472e-a3e4-2d42a5fe0cee"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "VipService",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{dev}}/api/service/vipServices?agentId=62c00501-8b0d-472e-a3e4-2d42a5fe0cee",
+									"host": [
+										"{{dev}}"
+									],
+									"path": [
+										"api",
+										"service",
+										"vipServices"
+									],
+									"query": [
+										{
+											"key": "agentId",
+											"value": "62c00501-8b0d-472e-a3e4-2d42a5fe0cee"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.14.2"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 03 Jun 2022 13:21:32 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "2378"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"94a-EeQActh8Vdttd1dEY5Cx5G2Wpxg\""
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"message\": \"دریافت سرویس های vip با موفقیت انجام شد\",\n        \"result\": {\n            \"services\": [\n                {\n                    \"origin\": {\n                        \"lat\": 36.284846,\n                        \"lng\": 59.596672\n                    },\n                    \"cost\": 200000,\n                    \"distance\": 3000,\n                    \"categoryId\": \"39710f48-a094-47bb-885a-be4ff3a84264\",\n                    \"categoryName\": \"آرایشگاه\",\n                    \"description\": null,\n                    \"userSocketId\": \"JjkA-pxuhV5mssG2AAAB\",\n                    \"serviceCode\": \"HIVE-b648a18b-aee0-45c7-a523-5d03a58752f5\",\n                    \"serviceType\": \"normal\",\n                    \"address\": \"مشهد، خیابان شفیغی، شفیغی 27\",\n                    \"state\": 1,\n                    \"paymentType\": \"cash\",\n                    \"status\": false,\n                    \"VipStatus\": true,\n                    \"userId\": \"7f57183b-7623-4c80-82c6-7c263fc9ecc6\",\n                    \"userFullName\": \"رضا حسینی\",\n                    \"userNumber\": \"09353133959\",\n                    \"agentId\": \"62c00501-8b0d-472e-a3e4-2d42a5fe0cee\",\n                    \"agentFullName\": \"سیدرضا حسینی \",\n                    \"agentNumber\": \"09353133959\",\n                    \"agentAvatarUrl\": \"https://hive1400.ir/uploads/avatars/03e17819-3570-48a5-8d13-1c19a49597d0.jpg\"\n                },\n                {\n                    \"origin\": {\n                        \"lat\": 36.284846,\n                        \"lng\": 59.596672\n                    },\n                    \"cost\": 200000,\n                    \"distance\": 3000,\n                    \"categoryId\": \"39710f48-a094-47bb-885a-be4ff3a84264\",\n                    \"categoryName\": \"آرایشگاه\",\n                    \"description\": null,\n                    \"userSocketId\": \"JjkA-pxuhV5mssG2AAAB\",\n                    \"serviceCode\": \"HIVE-482cf35b-b7d8-4cde-9f48-377771812bbc\",\n                    \"serviceType\": \"normal\",\n                    \"address\": \"مشهد، خیابان شفیغی، شفیغی 27\",\n                    \"state\": 1,\n                    \"paymentType\": \"cash\",\n                    \"status\": false,\n                    \"VipStatus\": true,\n                    \"userId\": \"7f57183b-7623-4c80-82c6-7c263fc9ecc6\",\n                    \"userFullName\": \"رضا حسینی\",\n                    \"userNumber\": \"09353133959\",\n                    \"agentId\": \"62c00501-8b0d-472e-a3e4-2d42a5fe0cee\",\n                    \"agentFullName\": \"سیدرضا حسینی \",\n                    \"agentNumber\": \"09353133959\",\n                    \"agentAvatarUrl\": \"https://hive1400.ir/uploads/avatars/03e17819-3570-48a5-8d13-1c19a49597d0.jpg\"\n                },\n                {\n                    \"origin\": {\n                        \"lat\": 36.284846,\n                        \"lng\": 59.596672\n                    },\n                    \"cost\": 200000,\n                    \"distance\": 3000,\n                    \"categoryId\": \"39710f48-a094-47bb-885a-be4ff3a84264\",\n                    \"categoryName\": \"آرایشگاه\",\n                    \"description\": null,\n                    \"userSocketId\": \"JjkA-pxuhV5mssG2AAAB\",\n                    \"serviceCode\": \"HIVE-1f0100cc-edb2-43fc-bf4b-85e02d1b1852\",\n                    \"serviceType\": \"normal\",\n                    \"address\": \"مشهد، خیابان شفیغی، شفیغی 27\",\n                    \"state\": 1,\n                    \"paymentType\": \"cash\",\n                    \"status\": false,\n                    \"VipStatus\": true,\n                    \"userId\": \"7f57183b-7623-4c80-82c6-7c263fc9ecc6\",\n                    \"userFullName\": \"رضا حسینی\",\n                    \"userNumber\": \"09353133959\",\n                    \"agentId\": \"62c00501-8b0d-472e-a3e4-2d42a5fe0cee\",\n                    \"agentFullName\": \"سیدرضا حسینی \",\n                    \"agentNumber\": \"09353133959\",\n                    \"agentAvatarUrl\": \"https://hive1400.ir/uploads/avatars/03e17819-3570-48a5-8d13-1c19a49597d0.jpg\"\n                }\n            ],\n            \"count\": 3\n        }\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "getSingleService",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{dev}}/api/service/single?serviceCode=HIVE-d7ab9864-96a5-4cbb-b8c6-dc48053ebfac",
+							"host": [
+								"{{dev}}"
+							],
+							"path": [
+								"api",
+								"service",
+								"single"
+							],
+							"query": [
+								{
+									"key": "serviceCode",
+									"value": "HIVE-d7ab9864-96a5-4cbb-b8c6-dc48053ebfac"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{dev}}/api/service/single?serviceCode=HIVE-d7ab9864-96a5-4cbb-b8c6-dc48053ebfac",
+									"host": [
+										"{{dev}}"
+									],
+									"path": [
+										"api",
+										"service",
+										"single"
+									],
+									"query": [
+										{
+											"key": "serviceCode",
+											"value": "HIVE-d7ab9864-96a5-4cbb-b8c6-dc48053ebfac"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.14.2"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 03 Jun 2022 13:26:46 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "929"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"3a1-p7jhMHQdf0yUMPT9CS1TeZv+KGA\""
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"message\": \"دریافت سرویس با موفقیت انجام شد\",\n        \"result\": {\n            \"origin\": {\n                \"lat\": 29.6284695,\n                \"lng\": 52.4987247\n            },\n            \"cost\": 20000,\n            \"distance\": 3000,\n            \"categoryId\": \"71c97970-ffbd-4fb4-b1d1-a4a9774d8008\",\n            \"categoryName\": \"برق ماشین\",\n            \"description\": null,\n            \"userSocketId\": \"uiMYqTQWLB9p8RJ4AAAB\",\n            \"serviceCode\": \"HIVE-d7ab9864-96a5-4cbb-b8c6-dc48053ebfac\",\n            \"serviceType\": \"normal\",\n            \"serviceDate\": \"1401/03/08\",\n            \"address\": \"مشهد، خیابان شفیغی، شفیغی 27\",\n            \"state\": 2,\n            \"paymentType\": \"credit\",\n            \"status\": false,\n            \"VipStatus\": false,\n            \"userId\": \"7f57183b-7623-4c80-82c6-7c263fc9ecc6\",\n            \"userFullName\": \"رضا حسینی\",\n            \"userNumber\": \"09353133959\",\n            \"expireTime\": 1952,\n            \"agentId\": \"62c00501-8b0d-472e-a3e4-2d42a5fe0cee\",\n            \"agentSocketId\": \"sSnLE_yxfO5zCC3eAAAD\",\n            \"agentFullName\": \"سیدرضا حسینی \",\n            \"agentNumber\": \"09353133959\",\n            \"agentAvatarUrl\": \"https://hive1400.ir/uploads/avatars/03e17819-3570-48a5-8d13-1c19a49597d0.jpg\"\n        }\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "discount",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{dev}}/api/service/discount?discountCode=O89Z3JC",
+							"host": [
+								"{{dev}}"
+							],
+							"path": [
+								"api",
+								"service",
+								"discount"
+							],
+							"query": [
+								{
+									"key": "discountCode",
+									"value": "O89Z3JC"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "alreadyUsed",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{dev}}/api/service/discount?discountCode=NY0LLDY",
+									"host": [
+										"{{dev}}"
+									],
+									"path": [
+										"api",
+										"service",
+										"discount"
+									],
+									"query": [
+										{
+											"key": "discountCode",
+											"value": "NY0LLDY"
+										}
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.14.2"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 03 Jun 2022 13:29:39 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "83"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"53-y9sYagTS3IWkMH9/63YgAx62qvM\""
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"fail\",\n    \"data\": {\n        \"message\": \"کد تخفیف استفاده شده است\"\n    }\n}"
+						},
+						{
+							"name": "expired",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{dev}}/api/service/discount?discountCode=KXBWLNJ",
+									"host": [
+										"{{dev}}"
+									],
+									"path": [
+										"api",
+										"service",
+										"discount"
+									],
+									"query": [
+										{
+											"key": "discountCode",
+											"value": "KXBWLNJ"
+										}
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.14.2"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 03 Jun 2022 13:31:24 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "79"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"4f-fq461C4w0F6FHMPLIuoJhlSqy7c\""
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"fail\",\n    \"data\": {\n        \"message\": \"کد تخفیف منقضی شده است\"\n    }\n}"
+						},
+						{
+							"name": "wrongCode",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{dev}}/api/service/discount?discountCode=KXBWLNA",
+									"host": [
+										"{{dev}}"
+									],
+									"path": [
+										"api",
+										"service",
+										"discount"
+									],
+									"query": [
+										{
+											"key": "discountCode",
+											"value": "KXBWLNA"
+										}
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.14.2"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 03 Jun 2022 13:31:53 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "116"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"74-jXTTIMlUrffrCOTGOhsz0Y3E7tI\""
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"fail\",\n    \"data\": {\n        \"message\": \"کد تخفیف یافت نشد لطفا دوباره بررسی نمایید\"\n    }\n}"
+						},
+						{
+							"name": "success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{dev}}/api/service/discount?discountCode=O89Z3JC",
+									"host": [
+										"{{dev}}"
+									],
+									"path": [
+										"api",
+										"service",
+										"discount"
+									],
+									"query": [
+										{
+											"key": "discountCode",
+											"value": "O89Z3JC"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.14.2"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 03 Jun 2022 13:32:50 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "107"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"6b-mM7TNacHrQpqsWU3EhrGaO9G05o\""
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"message\": \"کد تخفیف با موفقیت اعمال شد\",\n        \"result\": {\n            \"discountAmount\": 500000\n        }\n    }\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "factor",
+			"item": [
+				{
+					"name": "getFactors",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{local}}/api/factor/agent?id=62c00501-8b0d-472e-a3e4-2d42a5fe0cee",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"api",
+								"factor",
+								"agent"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "62c00501-8b0d-472e-a3e4-2d42a5fe0cee"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{local}}/api/factor/agent?id=62c00501-8b0d-472e-a3e4-2d42a5fe0cee",
+									"host": [
+										"{{local}}"
+									],
+									"path": [
+										"api",
+										"factor",
+										"agent"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "62c00501-8b0d-472e-a3e4-2d42a5fe0cee"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1051"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"41b-9O7DaAs/SQp7Vd4DiXga+RNekB0\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 03 Jun 2022 13:41:05 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"data\": {\n        \"message\": \"دریافت ریز تراکنش های کارگذار با موفقیت انجام شد\",\n        \"result\": [\n            {\n                \"factorTitle\": \"دریافت اعتباری حق سرویس\",\n                \"increaseStatus\": true,\n                \"factorType\": \"local\",\n                \"ownerId\": \"62c00501-8b0d-472e-a3e4-2d42a5fe0cee\",\n                \"serviceCode\": \"HIVE-d7ab9864-96a5-4cbb-b8c6-dc48053ebfac\",\n                \"factorId\": \"263721ec-d65c-430b-906b-3e6de31004b4\",\n                \"amount\": 20000,\n                \"date\": \"14010208\",\n                \"time\": \"19:46:33\"\n            },\n            {\n                \"factorTitle\": \"دریافت اعتباری حق سرویس\",\n                \"increaseStatus\": true,\n                \"factorType\": \"local\",\n                \"ownerId\": \"62c00501-8b0d-472e-a3e4-2d42a5fe0cee\",\n                \"serviceCode\": \"HIVE-ce9e267b-5cf2-40cc-8666-a74d78388c65\",\n                \"factorId\": \"98284aef-018f-4129-9efe-5ebc16e93c3b\",\n                \"amount\": 20000,\n                \"date\": \"14001205\",\n                \"time\": \"20:22:48\"\n            },\n            {\n                \"factorTitle\": \"کمیسیون\",\n                \"increaseStatus\": false,\n                \"factorType\": \"local\",\n                \"ownerId\": \"62c00501-8b0d-472e-a3e4-2d42a5fe0cee\",\n                \"serviceCode\": \"HIVE-1be33530-2181-4d90-a5df-8892b116d553\",\n                \"factorId\": \"fc346318-23bc-4ddf-b304-1eeed2385800\",\n                \"amount\": 9750,\n                \"date\": \"14010303\",\n                \"time\": \"20:26:04\"\n            }\n        ]\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "getDailyIncome",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{dev}}/api/factor/dailyIncome?id=cc4d3f0c-4bcc-4fd7-b425-7aa20349dea1",
+							"host": [
+								"{{dev}}"
+							],
+							"path": [
+								"api",
+								"factor",
+								"dailyIncome"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "cc4d3f0c-4bcc-4fd7-b425-7aa20349dea1"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{dev}}/api/factor/dailyIncome?id=cc4d3f0c-4bcc-4fd7-b425-7aa20349dea1",
+									"host": [
+										"{{dev}}"
+									],
+									"path": [
+										"api",
+										"factor",
+										"dailyIncome"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "cc4d3f0c-4bcc-4fd7-b425-7aa20349dea1"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.14.2"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 03 Jun 2022 13:44:26 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "123"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"7b-CIjW1/eGDowbGbCjhsXsdCyVgnU\""
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"data\": {\n        \"message\": \"دریافت درآمد روزانه با موفقیت انجام شد\",\n        \"result\": 0\n    }\n}"
+						}
+					]
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "local",
+			"value": "127.0.0.1:5000",
+			"type": "string"
+		},
+		{
+			"key": "dev",
+			"value": "45.82.137.223",
+			"type": "string"
+		},
+		{
+			"key": "domain",
+			"value": "https://hive1400.ir",
+			"type": "string"
+		}
+	]
+}

@@ -1,0 +1,188 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>درگاه پرداخت</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"
+      rel="stylesheet"
+    />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        /* direction: rtl; */
+        font-family: "IRAN";
+      }
+      @font-face {
+        font-family: "IRAN";
+        src: url(./fonts/IRAN.woff);
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .header {
+        width: 100%;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 2px 5px 1px rgb(64 60 67 / 16%);
+      }
+      .header > div > span {
+        margin-right: 0.3rem;
+        color: red;
+      }
+
+      .main {
+        max-width: 550px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+        padding: 1rem 2rem;
+      }
+      .main .icon {
+        margin-bottom: 1rem;
+      }
+      .main .icon span {
+        font-size: 45px;
+        color: red;
+      }
+      .main p {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        text-align: center;
+      }
+      .footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 550px;
+        flex-direction: column;
+        margin-top: 1rem;
+        width: 100%;
+      }
+
+      .footer > p {
+        font-size: 14px;
+        font-weight: bold;
+        color: blue;
+      }
+      .footer .footer-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1rem;
+        background-color: #6980ff;
+        border-radius: 10px;
+        width: 100%;
+        padding: 2rem 4rem;
+        text-align: center;
+        /* height: 400px; */
+        color: #fff;
+      }
+      .footer .footer-content p {
+        width: 100%;
+      }
+      .details {
+        text-align: center;
+        margin-top: 1rem;
+      }
+      .btn {
+        width: 65%;
+        margin-top: 6rem;
+        background-color: #acb1c4;
+        padding: 0.5rem;
+        border: none !important;
+        outline: none;
+        color: #fff;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      .factor {
+        padding-bottom: 10px;
+        border-bottom: 1px solid gray;
+        color: #6980ff;
+        width: 150px;
+        text-align: center;
+      }
+
+      @media screen and (max-width: 550px) {
+        main {
+          margin-top: 1.5rem;
+          padding: 2rem;
+        }
+        .footer .footer-content {
+          border-top-right-radius: 0px;
+          border-bottom-left-radius: 0px;
+          border-bottom-right-radius: 0px;
+          border-top-left-radius: 50px;
+        }
+        .btn {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h4>پرداخت ناموفق</h4>
+      </header>
+
+      <div class="main">
+        <p>کاربر گرامی پرداخت شما ناموفق بوده است</p>
+      </div>
+      <p class="factor">فاکتور</p>
+      <div class="footer">
+        <div class="footer-content">
+          <p><%= message %></p>
+          <button
+            id="btn"
+            class="btn"
+            onclick="handlePayment('<%= JSON.stringify(inputData) %>')"
+          >
+            تلاش مجدد جهت پرداخت
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script>
+    const URL = "https://hive1400.ir/api/payment/request";
+
+    const handleRedirect = (data) => {
+      const redirect = data?.data?.result?.redirectURL;
+      window.location.replace(redirect);
+      console.log(redirect);
+    };
+
+    const handlePayment = async (data) => {
+      let myHeaders = new Headers();
+      myHeaders.append("Content-Type", "application/json");
+      myHeaders.append("Referer", "http://hive1400.ir")
+      fetch(URL, {
+        method: "POST",
+        headers: myHeaders,
+        body: data,
+        redirect: "follow",
+      })
+        .then((response) => response.json())
+        .then((json) => handleRedirect(json))
+        .catch((error) => console.log("error", error));
+    };
+  </script>
+</html>
